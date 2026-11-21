@@ -142,7 +142,7 @@ The tools above are independent v0.1 releases. Their coverage, supported formats
 </p>
 
 <p align="center">
-  <a href="https://github.com/anistack72?tab=achievements"><strong>🏆 GitHub achievements</strong></a>
+  <a href="https://github.com/anistack72"><strong>🏆 GitHub achievements</strong></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/anistack72?tab=followers"><strong>Followers</strong></a>
   &nbsp;·&nbsp;
