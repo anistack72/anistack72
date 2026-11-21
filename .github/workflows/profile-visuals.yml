@@ -1,0 +1,77 @@
+name: Verified profile visuals
+
+on:
+  schedule:
+    - cron: '23 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verified-profile-visuals
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.repository == 'anistack72/anistack72'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout vetted source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: true
+
+      - name: Build factual public repository metrics
+        env:
+          PROFILE_USERNAME: anistack72
+          GITHUB_TOKEN: ${{ github.token }}
+          METRICS_OUTPUT: dist/profile-metrics.svg
+        run: python3 scripts/build_profile_metrics.py
+
+      - name: Generate light and dark contribution animations
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: anistack72
+          github_token: ${{ github.token }}
+          outputs: |
+            dist/contribution-snake.svg?palette=github-light
+            dist/contribution-snake-dark.svg?palette=github-dark
+
+      - name: Validate expected assets
+        run: |
+          set -euo pipefail
+          test -s dist/profile-metrics.svg
+          test -s dist/contribution-snake.svg
+          test -s dist/contribution-snake-dark.svg
+          grep -q '<svg' dist/profile-metrics.svg
+          grep -q '<svg' dist/contribution-snake.svg
+
+      - name: Publish only changed generated assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/profile-render"
+          cp dist/*.svg "$RUNNER_TEMP/profile-render/"
+          rm -rf dist
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin profile-assets > /dev/null; then
+            git fetch origin profile-assets
+            git switch -C profile-assets FETCH_HEAD
+          else
+            git switch --orphan profile-assets
+            git rm -rf --ignore-unmatch .
+          fi
+          mkdir -p dist
+          cp "$RUNNER_TEMP/profile-render/"*.svg dist/
+          git add dist
+          if git diff --cached --quiet; then
+            echo "All generated assets unchanged; no commit needed."
+            exit 0
+          fi
+          git commit -m "chore(profile): refresh factual activity visualizations"
+          git push origin HEAD:refs/heads/profile-assets
