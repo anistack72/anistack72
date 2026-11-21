@@ -131,6 +131,34 @@ The tools above are independent v0.1 releases. Their coverage, supported formats
 **Measure what matters.** Test behavior, performance and recovery paths.  
 **Verify the delivery.** Check the artifact users actually run.
 
+
+
+<br>
+
+## Verified open-source activity
+
+The visualizations below update automatically from **real GitHub data**. No artificial stars, followers, pull requests or backdated commits are generated.
+
+<p align="center">
+  <a href="https://github.com/anistack72?tab=repositories">
+    <img src="https://raw.githubusercontent.com/anistack72/anistack72/profile-assets/dist/profile-metrics.svg" width="100%" alt="Verified public repository statistics, including actual stars and forks">
+  </a>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anistack72/anistack72/profile-assets/dist/contribution-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anistack72/anistack72/profile-assets/dist/contribution-snake.svg">
+  <img src="https://raw.githubusercontent.com/anistack72/anistack72/profile-assets/dist/contribution-snake.svg" width="100%" alt="Animated visualization of actual GitHub contributions">
+</picture>
+
+<p align="center">
+  <a href="https://github.com/anistack72?tab=repositories"><strong>Explore repositories</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/anistack72?tab=followers"><strong>Developer community</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/anistack72/engineering-playbook"><strong>Engineering guides</strong></a>
+</p>
+
+<p align="center"><sub>Built with a scheduled, least-privilege GitHub Actions workflow. Visuals appear after the workflow is approved, merged and successfully run.</sub></p>
+
 <br>
 
 ---
