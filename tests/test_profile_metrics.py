@@ -56,10 +56,11 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(result["active"], 1)
 
     def test_svg_is_well_formed_and_deterministic(self):
-        values = {"repositories": 4, "stars": 12, "forks": 2, "active": 3}
+        values = {"followers": 6, "repositories": 4, "stars": 12, "forks": 2, "active": 3}
         rendered = profile.render_svg(values, "anistack72")
         self.assertEqual(rendered, profile.render_svg(values, "anistack72"))
         ET.fromstring(rendered)
+        self.assertIn("FOLLOWERS", rendered)
         self.assertIn("STARS RECEIVED", rendered)
         self.assertNotIn("<script", rendered)
 
