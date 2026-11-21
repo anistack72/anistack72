@@ -83,10 +83,7 @@ def render_svg(metrics: dict[str, int], username: str) -> str:
     """Render a compact responsive SVG without remote fonts or scripts."""
     cards = [
         ("FOLLOWERS", "followers"),
-        ("PUBLIC REPOS", "repositories"),
         ("STARS RECEIVED", "stars"),
-        ("FORKS", "forks"),
-        ("ACTIVE / 90 DAYS", "active"),
     ]
     lines = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" '
@@ -106,8 +103,8 @@ def render_svg(metrics: dict[str, int], username: str) -> str:
         '<text class="title" x="20" y="29">OPEN SOURCE / LIVE REPOSITORY METRICS</text>',
     ]
     for i, (label, key) in enumerate(cards):
-        x = 19 + i * 177
-        lines.append(f'<rect class="panel" x="{x}" y="49" width="164" height="109" rx="12"/>')
+        x = 19 + i * 442
+        lines.append(f'<rect class="panel" x="{x}" y="49" width="426" height="109" rx="12"/>')
         lines.append(f'<text class="sub" x="{x + 15}" y="78">{escape(label)}</text>')
         lines.append(f'<text class="num" x="{x + 15}" y="127">{metrics[key]:,}</text>')
     lines.append('</svg>')
