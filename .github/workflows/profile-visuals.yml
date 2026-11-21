@@ -35,23 +35,11 @@ jobs:
           METRICS_OUTPUT: dist/profile-metrics.svg
         run: python3 scripts/build_profile_metrics.py
 
-      - name: Generate light and dark contribution animations
-        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
-        with:
-          github_user_name: anistack72
-          github_token: ${{ github.token }}
-          outputs: |
-            dist/contribution-snake.svg?palette=github-light
-            dist/contribution-snake-dark.svg?palette=github-dark
-
       - name: Validate expected assets
         run: |
           set -euo pipefail
           test -s dist/profile-metrics.svg
-          test -s dist/contribution-snake.svg
-          test -s dist/contribution-snake-dark.svg
           grep -q '<svg' dist/profile-metrics.svg
-          grep -q '<svg' dist/contribution-snake.svg
 
       - name: Publish only changed generated assets
         shell: bash
