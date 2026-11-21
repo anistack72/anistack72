@@ -82,6 +82,7 @@ def summarize(repos: list[dict], username: str, now: datetime | None = None) -> 
 def render_svg(metrics: dict[str, int], username: str) -> str:
     """Render a compact responsive SVG without remote fonts or scripts."""
     cards = [
+        ("FOLLOWERS", "followers"),
         ("PUBLIC REPOS", "repositories"),
         ("STARS RECEIVED", "stars"),
         ("FORKS", "forks"),
@@ -105,8 +106,8 @@ def render_svg(metrics: dict[str, int], username: str) -> str:
         '<text class="title" x="20" y="29">OPEN SOURCE / LIVE REPOSITORY METRICS</text>',
     ]
     for i, (label, key) in enumerate(cards):
-        x = 19 + i * 221
-        lines.append(f'<rect class="panel" x="{x}" y="49" width="207" height="109" rx="12"/>')
+        x = 19 + i * 177
+        lines.append(f'<rect class="panel" x="{x}" y="49" width="164" height="109" rx="12"/>')
         lines.append(f'<text class="sub" x="{x + 15}" y="78">{escape(label)}</text>')
         lines.append(f'<text class="num" x="{x + 15}" y="127">{metrics[key]:,}</text>')
     lines.append('</svg>')
@@ -117,8 +118,19 @@ def main() -> int:
     username = os.getenv("PROFILE_USERNAME", "anistack72")
     output = Path(os.getenv("METRICS_OUTPUT", "dist/profile-metrics.svg"))
     try:
-        repos = fetch_public_repositories(username, os.getenv("GITHUB_TOKEN"))
+        token = os.getenv("GITHUB_TOKEN")
+        repos = fetch_public_repositories(username, token)
         metrics = summarize(repos, username)
+        headers = {
+            "Accept": "application/vnd.github+json",
+            "User-Agent": "anistack72-profile-metrics/1.0",
+            "X-GitHub-Api-Version": "2022-11-28",
+        }
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+        with urlopen(Request(f"{API}/users/{username}", headers=headers), timeout=20) as response:
+            user_data = json.load(response)
+        metrics["followers"] = max(0, int(user_data["followers"]))
         svg = render_svg(metrics, username)
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(svg, encoding="utf-8")
