@@ -10,7 +10,7 @@ GitHub may deny workflow creation to the connected GitHub App. If that happens, 
 
 ## State lifecycle
 
-The collector restores `growth-data:state.sqlite3`, then commits per-response cache checkpoints. A complete collection atomically inserts the daily snapshot with its report. Failed collections cannot create follower-loss events or publish partial growth metrics. Snapshots retain 90 days. API cache entries overwrite stable endpoint keys; no follower email harvesting occurs.
+The collector restores `growth-data:state.sqlite3`, then commits per-response cache checkpoints. A complete collection atomically inserts the daily snapshot with its report. Failed collections cannot create follower-loss events or publish partial growth metrics. Snapshots retain 90 days. API cache entries overwrite stable endpoint keys; no follower email harvesting occurs. One credential-free public-profile HTML request observes actually displayed badges. Failure of that UI read is reported as unavailable without retrying or inferring an award.
 
 The collector always uploads its `var/` directory when the campaign runs, including failure-state suspension markers. A separate trusted job copies only the SQLite database and named JSON/Markdown reports to the data branch. It uses a fast-forward-only push. A conflict or push denial fails instead of overwriting another checkpoint; the run artifact remains recoverable for 45 days. Scheduled runs after 21 December execute the regression gate/window check but make no API collection or state commits.
 

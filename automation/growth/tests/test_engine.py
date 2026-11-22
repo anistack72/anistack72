@@ -230,7 +230,8 @@ class Integration(Base):
         self.assertTrue(self.seen[1][1].endswith('/git/trees/tree456?recursive=1'))
         self.assertTrue(self.seen[2][1].endswith('?ref=commit123'))
 
-    def test_complete_run_is_atomic_and_idempotent(self):
+    @patch('growth.cli.verify_profile', return_value={'badges': [], 'status': 'fixture_no_visible_badges'})
+    def test_complete_run_is_atomic_and_idempotent(self, _verify):
         api = self.client([response({'followers': 0, 'following': 0}), response([]), response([]),
                            response({'followers': 0, 'following': 0}), response([]), response({'total_count': 0})])
         config = {'account': 'owner', 'discovery_seeds': [], 'discussion_repositories': []}

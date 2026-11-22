@@ -17,7 +17,7 @@ Repository ranking: `0.30*demand + 0.25*value + 0.20*readiness + 0.15*discoverab
 - Received stars for each owned, public, active, non-fork repository; one-repository progress toward the community-documented 16-star target.
 - Top-two prioritization with component evidence, observed real issues and candidate-source overlap.
 - Public searchable merged PR count with scope caveats; accepted answers only in configured Discussions-enabled repositories if authenticated queries succeed.
-- GitHub-visible award verification only with authoritative evidence; no award claimed from a threshold alone.
+- GitHub-visible award verification from the public profile with captured matching badge attributes; no award claimed from a threshold alone.
 - Request consumption, workflow conclusion and security suspension reason. GitHub Actions runs are the execution ledger; no unsupported automation success-rate metric is fabricated.
 - Conversion and causal campaign attribution: unknown until measured with an appropriate source. GitHub traffic data alone does not establish which visitor starred.
 

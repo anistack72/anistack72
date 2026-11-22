@@ -72,8 +72,9 @@ def achievement_states(evidence):
         observed = evidence[name]
         # Availability and criteria are not fully officially specified; community claims
         # never advance REQUIREMENTS_VERIFIED or GITHUB_VERIFIED automatically.
-        states[name] = {'state': 'UNKNOWN', 'observed_evidence': observed,
-                        'blocked_transition': 'Needs current requirement verification and authoritative award evidence.'}
+        visible = observed.get('award_verified') and observed.get('visible_award_evidence')
+        states[name] = {'state': 'GITHUB_VERIFIED' if visible else 'UNKNOWN', 'observed_evidence': observed,
+                        'blocked_transition': None if visible else 'Needs current requirement verification and authoritative award evidence.'}
     return {'transitions': ['UNKNOWN', 'REQUIREMENTS_VERIFIED', 'ELIGIBLE', 'ACTION_COMPLETED', 'GITHUB_VERIFIED'],
             'achievements': states,
             'note': 'Public API evidence is not an award endpoint. A hidden or missing badge is not proof of ineligibility.'}

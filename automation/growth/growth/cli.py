@@ -13,6 +13,7 @@ from .intelligence import (utcnow, relationships, repository_audit, discover,
                            achievement_evidence, analytics, draft_queue)
 from .state import State
 from .campaign import rank_repository, schedule_tasks, achievement_states, phase
+from .verification import verify_profile
 
 
 def log(event, **fields):
@@ -69,6 +70,11 @@ def run(api, state, config, output, discovery=True, graphql=True):
     audits.sort(key=lambda row: (-row['opportunity']['score'], -row['stars'], row['repository']))
     candidates, opportunities = discover(api, config, following) if discovery else ([], [])
     achievements = achievement_evidence(api, config, audits, graphql and bool(api.token))
+    profile_verification = verify_profile(account)
+    for badge in profile_verification['badges']:
+        if badge['name'] in achievements:
+            achievements[badge['name']]['award_verified'] = True
+            achievements[badge['name']]['visible_award_evidence'] = {**badge, 'checked_at': profile_verification['checked_at']}
     snapshot = {'day': day, 'observed_at': utcnow().isoformat(),
                 'followers': [{'id': u['id'], 'login': u['login']} for u in followers],
                 'following': [{'id': u['id'], 'login': u['login']} for u in following],
@@ -82,8 +88,10 @@ def run(api, state, config, output, discovery=True, graphql=True):
               'queue': draft_queue(candidates, opportunities, audits, config.get('unfollow_review', {})),
               'achievements': achievements, 'analytics': analytics(history, snapshot),
               'capabilities': {'discovery': discovery, 'graphql': graphql and bool(api.token),
+                               'visible_badge_verification': True,
                                'external_mutations': False, 'release_publish': False},
               'requests': api.calls}
+    report['profile_verification'] = profile_verification
     report['campaign'] = schedule_tasks(report, config.get('campaign_start', '2026-11-21'), config.get('campaign_end', '2026-12-21'))
     report['achievement_states'] = achievement_states(achievements)
     # Commit snapshot and report together. Export can be recovered idempotently on rerun.

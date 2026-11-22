@@ -1,11 +1,11 @@
 [
   {
     "repository": "anistack72/ai-runtime-doctor",
-    "commit": "af0ce9d3070209ea6a36fe0b0c1158f32c7055e1",
-    "tree": "0fa02870413ef649a7abbf1fe9d0a950197fc90a",
-    "verified_at": "2026-11-21T19:48:04.736071+00:00",
-    "node": "v24.20.0",
-    "platform": "macOS arm64",
+    "commit": "0016669c42e7ea4b9c34d39d9114fb3acc52a345",
+    "tree": "acec3d664c843026d98cf0d29bd2f4786d496fef",
+    "verified_at": "2026-11-22T23:46:48.693479+00:00",
+    "node": "22 and 24",
+    "platform": "CI: Linux, macOS, Windows",
     "results": [
       {
         "command": [
@@ -13,8 +13,7 @@
           "run",
           "check"
         ],
-        "exit_code": 0,
-        "log": "ai-runtime-doctor-npm-run-check.log"
+        "exit_code": 0
       },
       {
         "command": [
@@ -22,27 +21,13 @@
           "test"
         ],
         "exit_code": 0,
-        "log": "ai-runtime-doctor-npm-test.log"
-      },
-      {
-        "command": [
-          "node",
-          "demo.mjs"
-        ],
-        "exit_code": 0,
-        "log": "ai-runtime-doctor-node-demo.mjs.log"
-      },
-      {
-        "command": [
-          "node",
-          "demo.mjs",
-          "html"
-        ],
-        "exit_code": 0,
-        "log": "ai-runtime-doctor-node-demo.mjs-html.log"
+        "tests": 15,
+        "includes": "terminal/JSON/HTML fixture demo subprocesses"
       }
     ],
-    "passed": true
+    "passed": true,
+    "validation_origin": "Successful PR CI; merged tree identical to tested tree",
+    "workflow_url": "https://github.com/anistack72/ai-runtime-doctor/actions/runs/45084776585"
   },
   {
     "repository": "anistack72/web-audit-workbench",
@@ -91,11 +76,11 @@
   },
   {
     "repository": "anistack72/asset-budget",
-    "commit": "e4c7496ea81da1aeb075f587ac5b3643c1562df0",
-    "tree": "fa2e4620c73f6cdbd4a071a2082247c2533d9942",
-    "verified_at": "2026-11-21T19:48:04.439560+00:00",
-    "node": "v24.20.0",
-    "platform": "macOS arm64",
+    "commit": "4d2059ae081430a8d10afbb8329a188499949662",
+    "tree": "892fb2bca9b09e889b33231ef14b7bcd2558091e",
+    "verified_at": "2026-11-22T23:46:48.693688+00:00",
+    "node": "22 and 24",
+    "platform": "CI: Linux, macOS, Windows",
     "results": [
       {
         "command": [
@@ -103,8 +88,7 @@
           "run",
           "check"
         ],
-        "exit_code": 0,
-        "log": "asset-budget-npm-run-check.log"
+        "exit_code": 0
       },
       {
         "command": [
@@ -112,27 +96,13 @@
           "test"
         ],
         "exit_code": 0,
-        "log": "asset-budget-npm-test.log"
-      },
-      {
-        "command": [
-          "node",
-          "demo.mjs"
-        ],
-        "exit_code": 0,
-        "log": "asset-budget-node-demo.mjs.log"
-      },
-      {
-        "command": [
-          "node",
-          "demo.mjs",
-          "html"
-        ],
-        "exit_code": 0,
-        "log": "asset-budget-node-demo.mjs-html.log"
+        "tests": 11,
+        "includes": "terminal/JSON/HTML fixture demo subprocesses"
       }
     ],
-    "passed": true
+    "passed": true,
+    "validation_origin": "Successful PR CI; merged tree identical to tested tree",
+    "workflow_url": "https://github.com/anistack72/asset-budget/actions/runs/45084782943"
   },
   {
     "repository": "anistack72/mac-release-gate",
