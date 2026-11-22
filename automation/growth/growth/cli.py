@@ -106,12 +106,18 @@ def run(api, state, config, output, discovery=True, graphql=True):
 
 
 def write_brief(output, report):
-    lines = [f"# Growth intelligence — {report['day']}", '',
+    final = report.get('campaign', {}).get('phase') == 'final_report'
+    title = 'Final campaign report' if final else 'Growth intelligence'
+    lines = [f"# {title} — {report['day']}", '',
              'Observed public data; no campaign or badge award attribution.', '',
              '| Repository | Opportunity heuristic | Stars |', '|---|---:|---:|']
     for row in report['repositories']:
         lines.append(f"| {row['repository']} | {row['opportunity']['score']}/100 | {row['stars']} |")
     lines.extend(['', '## Useful next work', ''])
+    overall = report.get('analytics', {}).get('campaign_observed_interval')
+    if overall:
+        lines.extend([f"Observed campaign interval: {overall['from']} to {overall['to']}.",
+                      f"Net follower change: {overall['followers_net']}. Genuine identity and causal attribution are unverified.", ''])
     for row in report['repositories'][:3]:
         for rec in row['recommendations'][:2]:
             lines.append(f"- {row['repository']}: {rec['action']}")

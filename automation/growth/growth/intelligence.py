@@ -213,6 +213,8 @@ def analytics(history, current):
                                          for r, n in current['stars'].items()},
                 'from': old['day'], 'to': current['day']}
     return {'daily_observed_interval': change(previous), 'weekly_observed_interval': change(baseline),
+            'campaign_observed_interval': change(history[0][1]) if history else None,
+            'campaign_baseline_note': 'First actual stored observation; no data backfilled before deployment.',
             'weekly_status': 'available' if baseline else 'insufficient_history',
             'attribution': 'unknown: GitHub does not expose which campaign caused a star or follow',
             'conversion_rate': None, 'conversion_reason': 'No measured unique visitor denominator or campaign attribution.'}

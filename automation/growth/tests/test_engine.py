@@ -184,6 +184,14 @@ class Logic(Base):
         self.assertEqual(result['repository_stars_net']['x/y'], 2)
         self.assertIsNone(result['repository_stars_net']['x/new'])
 
+    def test_campaign_report_uses_first_actual_snapshot(self):
+        old = {'day': '2026-11-23', 'followers': [1], 'stars': {'x/y': 0}}
+        new = {'day': '2026-12-21', 'followers': [1, 2, 3], 'stars': {'x/y': 2}}
+        overall = analytics([('2026-11-23', old)], new)['campaign_observed_interval']
+        self.assertEqual(overall['from'], '2026-11-23')
+        self.assertEqual(overall['followers_net'], 2)
+        self.assertEqual(overall['repository_stars_net']['x/y'], 2)
+
     def test_queue_is_deterministic_and_never_executes(self):
         rows = [{'repository': 'x/y', 'description': 'A tool', 'url': 'https://github.com/x/y'}]
         queue = draft_queue([], [], rows, {'real': 'No longer relevant'})
