@@ -77,3 +77,21 @@ def achievement_states(evidence):
     return {'transitions': ['UNKNOWN', 'REQUIREMENTS_VERIFIED', 'ELIGIBLE', 'ACTION_COMPLETED', 'GITHUB_VERIFIED'],
             'achievements': states,
             'note': 'Public API evidence is not an award endpoint. A hidden or missing badge is not proof of ineligibility.'}
+
+
+def transition_achievement(current, target, evidence):
+    """Validate a single evidence-bearing transition; never infer an award."""
+    order = ['UNKNOWN', 'REQUIREMENTS_VERIFIED', 'ELIGIBLE', 'ACTION_COMPLETED', 'GITHUB_VERIFIED']
+    if current not in order or target not in order or order.index(target) != order.index(current) + 1:
+        raise ValueError('Only adjacent, forward achievement transitions are allowed')
+    if not evidence.get('checked_at') or evidence.get('fabricated') or evidence.get('artificial_activity'):
+        raise ValueError('Current authentic evidence is required')
+    required = {'REQUIREMENTS_VERIFIED': ('requirements_source', 'criteria_reviewed'),
+                'ELIGIBLE': ('eligibility_evidence_url',),
+                'ACTION_COMPLETED': ('event_urls', 'useful_work_verified'),
+                'GITHUB_VERIFIED': ('github_award_url', 'visible_badge_name', 'captured_evidence')}
+    if any(not evidence.get(field) for field in required[target]):
+        raise ValueError('Missing evidence for requested achievement state')
+    if target == 'GITHUB_VERIFIED' and not evidence['github_award_url'].startswith('https://github.com/'):
+        raise ValueError('Award evidence must come from GitHub')
+    return {'state': target, 'evidence': evidence}

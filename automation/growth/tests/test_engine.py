@@ -6,9 +6,9 @@ from pathlib import Path
 from unittest.mock import patch
 
 from growth.api import Client, Deferred, Halt, RiskController
-from growth.campaign import phase, rank_repository, schedule_tasks, achievement_states
+from growth.campaign import phase, rank_repository, schedule_tasks, achievement_states, transition_achievement
 from growth.cli import run
-from growth.intelligence import relationships, analytics, draft_queue
+from growth.intelligence import relationships, analytics, draft_queue, repository_audit
 from growth.state import State
 
 
@@ -139,6 +139,20 @@ class API(Base):
 
 
 class Logic(Base):
+    def test_award_state_cannot_skip_evidence_or_infer_from_a_threshold(self):
+        with self.assertRaises(ValueError):
+            transition_achievement('UNKNOWN', 'GITHUB_VERIFIED', {'stars': 16})
+        with self.assertRaises(ValueError):
+            transition_achievement('ACTION_COMPLETED', 'GITHUB_VERIFIED', {'checked_at': '2026-11-23', 'stars': 16})
+
+    def test_action_transition_rejects_fabricated_work(self):
+        with self.assertRaises(ValueError):
+            transition_achievement('ELIGIBLE', 'ACTION_COMPLETED', {'checked_at': '2026-11-23', 'event_urls': ['https://github.com/x/y/pull/1'], 'useful_work_verified': True, 'fabricated': True})
+
+    def test_requirement_transition_records_evidence(self):
+        evidence = {'checked_at': '2026-11-23', 'requirements_source': 'https://github.com/Schweinepriester/github-profile-achievements', 'criteria_reviewed': True}
+        self.assertEqual(transition_achievement('UNKNOWN', 'REQUIREMENTS_VERIFIED', evidence)['state'], 'REQUIREMENTS_VERIFIED')
+
     def test_baseline_does_not_invent_gains(self):
         result = relationships(None, [{'id': 1, 'login': 'a'}], [])
         self.assertTrue(result['baseline'])
@@ -203,6 +217,19 @@ class Logic(Base):
 
 
 class Integration(Base):
+    def test_repository_audit_pins_tree_and_readme_to_same_commit(self):
+        api = self.client([
+            response({'sha': 'commit123', 'commit': {'tree': {'sha': 'tree456'}}}),
+            response({'sha': 'tree456', 'tree': [{'path': 'README.md', 'type': 'blob'}]}),
+            response({'encoding': 'base64', 'content': 'IyBSdW4K'}),
+        ])
+        audit = repository_audit(api, {'full_name': 'x/y', 'default_branch': 'main',
+                                      'html_url': 'https://github.com/x/y', 'stargazers_count': 0})
+        self.assertEqual(audit['tree_sha'], 'tree456')
+        self.assertEqual(audit['commit_sha'], 'commit123')
+        self.assertTrue(self.seen[1][1].endswith('/git/trees/tree456?recursive=1'))
+        self.assertTrue(self.seen[2][1].endswith('?ref=commit123'))
+
     def test_complete_run_is_atomic_and_idempotent(self):
         api = self.client([response({'followers': 0, 'following': 0}), response([]), response([]),
                            response({'followers': 0, 'following': 0}), response([]), response({'total_count': 0})])

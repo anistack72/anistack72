@@ -34,7 +34,13 @@ def relationships(previous, followers, following):
 def repository_audit(api, repo):
     full = repo['full_name']
     root = '/repos/' + full
-    tree = api.get(root + '/git/trees/' + urllib.parse.quote(repo['default_branch'], safe='') + '?recursive=1')
+    revision = api.get(root + '/commits/' + urllib.parse.quote(repo['default_branch'], safe=''))
+    try:
+        commit_sha = revision['sha']
+        tree_sha = revision['commit']['tree']['sha']
+    except (TypeError, KeyError):
+        api.risk.trip('Unexpected commit/tree identity schema')
+    tree = api.get(root + '/git/trees/' + tree_sha + '?recursive=1')
     if not isinstance(tree, dict) or not isinstance(tree.get('tree'), list):
         api.risk.trip('Unexpected repository tree schema')
     paths = [node['path'] for node in tree['tree'] if node.get('type') == 'blob']
@@ -42,7 +48,7 @@ def repository_audit(api, repo):
     readme_path = next((p for p in paths if p.lower() in ('readme.md', 'readme.rst', 'readme')), None)
     text = ''
     if readme_path:
-        readme = api.get(root + '/contents/' + urllib.parse.quote(readme_path) + '?ref=' + urllib.parse.quote(repo['default_branch'], safe=''))
+        readme = api.get(root + '/contents/' + urllib.parse.quote(readme_path) + '?ref=' + commit_sha)
         if readme.get('encoding') == 'base64':
             try:
                 text = base64.b64decode(readme['content'], validate=False).decode('utf-8', errors='replace')
@@ -84,7 +90,8 @@ def repository_audit(api, repo):
             'release_gate': 'File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.',
             'demand': 'unknown; stars and documentation do not establish developer demand',
             'differentiation': 'requires human assessment',
-            'tree_sha': tree.get('sha'),
+            'tree_sha': tree_sha,
+            'commit_sha': commit_sha,
             'forks': repo.get('forks_count', 0),
             'open_issues_and_prs': repo.get('open_issues_count', 0),
             'subscribers': repo.get('subscribers_count'),
