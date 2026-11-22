@@ -1,0 +1,1201 @@
+{
+  "schema_version": 1,
+  "account": "anistack72",
+  "day": "2026-11-22",
+  "observed_at": "2026-11-22T23:42:22.301160+00:00",
+  "status": "complete",
+  "metrics": {
+    "followers": 1,
+    "following": 0,
+    "stars_received_owned_active_public": 0
+  },
+  "relationships": {
+    "baseline": true,
+    "new_followers": [],
+    "lost_followers": [],
+    "you_followed": [],
+    "you_unfollowed": [],
+    "mutual": [],
+    "followers_only": [
+      "engrshuvodas"
+    ],
+    "following_only": [],
+    "note": "Observed snapshot differences; changes between polls and causes are unknown."
+  },
+  "repositories": [
+    {
+      "repository": "anistack72/ai-runtime-doctor",
+      "url": "https://github.com/anistack72/ai-runtime-doctor",
+      "stars": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "readiness_score": 82,
+      "checks": {
+        "description": true,
+        "topics": false,
+        "license": true,
+        "readme": true,
+        "quickstart": true,
+        "example_documented": true,
+        "tests_present": true,
+        "ci_present": true,
+        "security_policy": true,
+        "contributing": true,
+        "changelog": false
+      },
+      "recommendations": [
+        {
+          "check": "topics",
+          "action": "Add only accurate technical topics from the implementation."
+        },
+        {
+          "check": "changelog",
+          "action": "Record user-visible changes for the next real release."
+        }
+      ],
+      "tree_complete": true,
+      "release_ready": false,
+      "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
+      "demand": "unknown; stars and documentation do not establish developer demand",
+      "differentiation": "requires human assessment",
+      "tree_sha": "af0ce9d3070209ea6a36fe0b0c1158f32c7055e1",
+      "forks": 0,
+      "open_issues_and_prs": 0,
+      "subscribers": null,
+      "description": "Read-only diagnostics for Ollama and LM Studio: local model inventory, bounded requests and JSON/HTML reports.",
+      "default_branch": "main",
+      "discussions_enabled": false,
+      "opportunity": {
+        "score": 43.25,
+        "weights": {
+          "developer_demand": 0.3,
+          "demonstrable_value": 0.25,
+          "technical_readiness": 0.2,
+          "discoverability": 0.15,
+          "maintenance_quality": 0.1
+        },
+        "components": {
+          "developer_demand": 0,
+          "demonstrable_value": 50,
+          "technical_readiness": 60,
+          "discoverability": 75,
+          "maintenance_quality": 75
+        },
+        "evidence": {
+          "developer_demand": {
+            "stars": 0,
+            "forks": 0,
+            "formula": "min(100, 4*stars + 8*forks)",
+            "limitation": "Sparse popularity proxy; underlying demand unknown."
+          },
+          "verified_tests_and_demo": null,
+          "file_presence_checks": {
+            "description": true,
+            "topics": false,
+            "license": true,
+            "readme": true,
+            "quickstart": true,
+            "example_documented": true,
+            "tests_present": true,
+            "ci_present": true,
+            "security_policy": true,
+            "contributing": true,
+            "changelog": false
+          },
+          "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
+        }
+      }
+    },
+    {
+      "repository": "anistack72/asset-budget",
+      "url": "https://github.com/anistack72/asset-budget",
+      "stars": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "readiness_score": 82,
+      "checks": {
+        "description": true,
+        "topics": false,
+        "license": true,
+        "readme": true,
+        "quickstart": true,
+        "example_documented": true,
+        "tests_present": true,
+        "ci_present": true,
+        "security_policy": true,
+        "contributing": true,
+        "changelog": false
+      },
+      "recommendations": [
+        {
+          "check": "topics",
+          "action": "Add only accurate technical topics from the implementation."
+        },
+        {
+          "check": "changelog",
+          "action": "Record user-visible changes for the next real release."
+        }
+      ],
+      "tree_complete": true,
+      "release_ready": false,
+      "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
+      "demand": "unknown; stars and documentation do not establish developer demand",
+      "differentiation": "requires human assessment",
+      "tree_sha": "e4c7496ea81da1aeb075f587ac5b3643c1562df0",
+      "forks": 0,
+      "open_issues_and_prs": 0,
+      "subscribers": null,
+      "description": "Enforce raw, gzip and Brotli build-size budgets in CI. Per-file limits, largest-asset reports and zero runtime dependencies.",
+      "default_branch": "main",
+      "discussions_enabled": false,
+      "opportunity": {
+        "score": 43.25,
+        "weights": {
+          "developer_demand": 0.3,
+          "demonstrable_value": 0.25,
+          "technical_readiness": 0.2,
+          "discoverability": 0.15,
+          "maintenance_quality": 0.1
+        },
+        "components": {
+          "developer_demand": 0,
+          "demonstrable_value": 50,
+          "technical_readiness": 60,
+          "discoverability": 75,
+          "maintenance_quality": 75
+        },
+        "evidence": {
+          "developer_demand": {
+            "stars": 0,
+            "forks": 0,
+            "formula": "min(100, 4*stars + 8*forks)",
+            "limitation": "Sparse popularity proxy; underlying demand unknown."
+          },
+          "verified_tests_and_demo": null,
+          "file_presence_checks": {
+            "description": true,
+            "topics": false,
+            "license": true,
+            "readme": true,
+            "quickstart": true,
+            "example_documented": true,
+            "tests_present": true,
+            "ci_present": true,
+            "security_policy": true,
+            "contributing": true,
+            "changelog": false
+          },
+          "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
+        }
+      }
+    },
+    {
+      "repository": "anistack72/mac-release-gate",
+      "url": "https://github.com/anistack72/mac-release-gate",
+      "stars": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "readiness_score": 82,
+      "checks": {
+        "description": true,
+        "topics": false,
+        "license": true,
+        "readme": true,
+        "quickstart": true,
+        "example_documented": true,
+        "tests_present": true,
+        "ci_present": true,
+        "security_policy": true,
+        "contributing": true,
+        "changelog": false
+      },
+      "recommendations": [
+        {
+          "check": "topics",
+          "action": "Add only accurate technical topics from the implementation."
+        },
+        {
+          "check": "changelog",
+          "action": "Record user-visible changes for the next real release."
+        }
+      ],
+      "tree_complete": true,
+      "release_ready": false,
+      "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
+      "demand": "unknown; stars and documentation do not establish developer demand",
+      "differentiation": "requires human assessment",
+      "tree_sha": "8bd636ade193392f7b7315e70953b95eb468d3f5",
+      "forks": 0,
+      "open_issues_and_prs": 0,
+      "subscribers": null,
+      "description": "Read-only macOS release checks: code signatures, Developer ID, Gatekeeper, stapled notarization tickets and streaming SHA-256.",
+      "default_branch": "main",
+      "discussions_enabled": false,
+      "opportunity": {
+        "score": 43.25,
+        "weights": {
+          "developer_demand": 0.3,
+          "demonstrable_value": 0.25,
+          "technical_readiness": 0.2,
+          "discoverability": 0.15,
+          "maintenance_quality": 0.1
+        },
+        "components": {
+          "developer_demand": 0,
+          "demonstrable_value": 50,
+          "technical_readiness": 60,
+          "discoverability": 75,
+          "maintenance_quality": 75
+        },
+        "evidence": {
+          "developer_demand": {
+            "stars": 0,
+            "forks": 0,
+            "formula": "min(100, 4*stars + 8*forks)",
+            "limitation": "Sparse popularity proxy; underlying demand unknown."
+          },
+          "verified_tests_and_demo": null,
+          "file_presence_checks": {
+            "description": true,
+            "topics": false,
+            "license": true,
+            "readme": true,
+            "quickstart": true,
+            "example_documented": true,
+            "tests_present": true,
+            "ci_present": true,
+            "security_policy": true,
+            "contributing": true,
+            "changelog": false
+          },
+          "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
+        }
+      }
+    },
+    {
+      "repository": "anistack72/security-report-kit",
+      "url": "https://github.com/anistack72/security-report-kit",
+      "stars": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "readiness_score": 82,
+      "checks": {
+        "description": true,
+        "topics": false,
+        "license": true,
+        "readme": true,
+        "quickstart": true,
+        "example_documented": true,
+        "tests_present": true,
+        "ci_present": true,
+        "security_policy": true,
+        "contributing": true,
+        "changelog": false
+      },
+      "recommendations": [
+        {
+          "check": "topics",
+          "action": "Add only accurate technical topics from the implementation."
+        },
+        {
+          "check": "changelog",
+          "action": "Record user-visible changes for the next real release."
+        }
+      ],
+      "tree_complete": true,
+      "release_ready": false,
+      "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
+      "demand": "unknown; stars and documentation do not establish developer demand",
+      "differentiation": "requires human assessment",
+      "tree_sha": "be39fb531f5e9a0c3489d1ef3c3a46b8325425d1",
+      "forks": 0,
+      "open_issues_and_prs": 0,
+      "subscribers": null,
+      "description": "Normalize Gitleaks, Trivy and Semgrep findings. Redact secret fields, compare baselines and gate new or escalated findings.",
+      "default_branch": "main",
+      "discussions_enabled": false,
+      "opportunity": {
+        "score": 43.25,
+        "weights": {
+          "developer_demand": 0.3,
+          "demonstrable_value": 0.25,
+          "technical_readiness": 0.2,
+          "discoverability": 0.15,
+          "maintenance_quality": 0.1
+        },
+        "components": {
+          "developer_demand": 0,
+          "demonstrable_value": 50,
+          "technical_readiness": 60,
+          "discoverability": 75,
+          "maintenance_quality": 75
+        },
+        "evidence": {
+          "developer_demand": {
+            "stars": 0,
+            "forks": 0,
+            "formula": "min(100, 4*stars + 8*forks)",
+            "limitation": "Sparse popularity proxy; underlying demand unknown."
+          },
+          "verified_tests_and_demo": null,
+          "file_presence_checks": {
+            "description": true,
+            "topics": false,
+            "license": true,
+            "readme": true,
+            "quickstart": true,
+            "example_documented": true,
+            "tests_present": true,
+            "ci_present": true,
+            "security_policy": true,
+            "contributing": true,
+            "changelog": false
+          },
+          "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
+        }
+      }
+    },
+    {
+      "repository": "anistack72/web-audit-workbench",
+      "url": "https://github.com/anistack72/web-audit-workbench",
+      "stars": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "readiness_score": 82,
+      "checks": {
+        "description": true,
+        "topics": false,
+        "license": true,
+        "readme": true,
+        "quickstart": true,
+        "example_documented": true,
+        "tests_present": true,
+        "ci_present": true,
+        "security_policy": true,
+        "contributing": true,
+        "changelog": false
+      },
+      "recommendations": [
+        {
+          "check": "topics",
+          "action": "Add only accurate technical topics from the implementation."
+        },
+        {
+          "check": "changelog",
+          "action": "Record user-visible changes for the next real release."
+        }
+      ],
+      "tree_complete": true,
+      "release_ready": false,
+      "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
+      "demand": "unknown; stars and documentation do not establish developer demand",
+      "differentiation": "requires human assessment",
+      "tree_sha": "d8c177d640ca7982119113f9175ffcc7a206e250",
+      "forks": 0,
+      "open_issues_and_prs": 0,
+      "subscribers": null,
+      "description": "Bounded same-origin web auditing, HTTP security checks and ZAP/Nuclei report adapters. Node.js, zero runtime dependencies.",
+      "default_branch": "main",
+      "discussions_enabled": false,
+      "opportunity": {
+        "score": 43.25,
+        "weights": {
+          "developer_demand": 0.3,
+          "demonstrable_value": 0.25,
+          "technical_readiness": 0.2,
+          "discoverability": 0.15,
+          "maintenance_quality": 0.1
+        },
+        "components": {
+          "developer_demand": 0,
+          "demonstrable_value": 50,
+          "technical_readiness": 60,
+          "discoverability": 75,
+          "maintenance_quality": 75
+        },
+        "evidence": {
+          "developer_demand": {
+            "stars": 0,
+            "forks": 0,
+            "formula": "min(100, 4*stars + 8*forks)",
+            "limitation": "Sparse popularity proxy; underlying demand unknown."
+          },
+          "verified_tests_and_demo": null,
+          "file_presence_checks": {
+            "description": true,
+            "topics": false,
+            "license": true,
+            "readme": true,
+            "quickstart": true,
+            "example_documented": true,
+            "tests_present": true,
+            "ci_present": true,
+            "security_policy": true,
+            "contributing": true,
+            "changelog": false
+          },
+          "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
+        }
+      }
+    },
+    {
+      "repository": "anistack72/anistack72",
+      "url": "https://github.com/anistack72/anistack72",
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "readiness_score": 45,
+      "checks": {
+        "description": true,
+        "topics": false,
+        "license": false,
+        "readme": true,
+        "quickstart": false,
+        "example_documented": true,
+        "tests_present": true,
+        "ci_present": true,
+        "security_policy": false,
+        "contributing": false,
+        "changelog": false
+      },
+      "recommendations": [
+        {
+          "check": "topics",
+          "action": "Add only accurate technical topics from the implementation."
+        },
+        {
+          "check": "license",
+          "action": "Choose and verify a license before encouraging reuse."
+        },
+        {
+          "check": "quickstart",
+          "action": "Add a reproducible installation and first-run command."
+        },
+        {
+          "check": "security_policy",
+          "action": "Document supported versions and private vulnerability reporting."
+        },
+        {
+          "check": "contributing",
+          "action": "Explain development setup and how to submit a useful change."
+        },
+        {
+          "check": "changelog",
+          "action": "Record user-visible changes for the next real release."
+        }
+      ],
+      "tree_complete": true,
+      "release_ready": false,
+      "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
+      "demand": "unknown; stars and documentation do not establish developer demand",
+      "differentiation": "requires human assessment",
+      "tree_sha": "3b40ca89d3ad28c3da2d586180042c83482fdc9c",
+      "forks": 0,
+      "open_issues_and_prs": 1,
+      "subscribers": null,
+      "description": "Anis Mosbah · Software engineer · macOS, web & local AI",
+      "default_branch": "main",
+      "discussions_enabled": false,
+      "opportunity": {
+        "score": 30.5,
+        "weights": {
+          "developer_demand": 0.3,
+          "demonstrable_value": 0.25,
+          "technical_readiness": 0.2,
+          "discoverability": 0.15,
+          "maintenance_quality": 0.1
+        },
+        "components": {
+          "developer_demand": 0,
+          "demonstrable_value": 50,
+          "technical_readiness": 40,
+          "discoverability": 50,
+          "maintenance_quality": 25
+        },
+        "evidence": {
+          "developer_demand": {
+            "stars": 0,
+            "forks": 0,
+            "formula": "min(100, 4*stars + 8*forks)",
+            "limitation": "Sparse popularity proxy; underlying demand unknown."
+          },
+          "verified_tests_and_demo": null,
+          "file_presence_checks": {
+            "description": true,
+            "topics": false,
+            "license": false,
+            "readme": true,
+            "quickstart": false,
+            "example_documented": true,
+            "tests_present": true,
+            "ci_present": true,
+            "security_policy": false,
+            "contributing": false,
+            "changelog": false
+          },
+          "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
+        }
+      }
+    },
+    {
+      "repository": "anistack72/engineering-playbook",
+      "url": "https://github.com/anistack72/engineering-playbook",
+      "stars": 0,
+      "language": null,
+      "topics": [],
+      "readiness_score": 45,
+      "checks": {
+        "description": true,
+        "topics": false,
+        "license": true,
+        "readme": true,
+        "quickstart": true,
+        "example_documented": true,
+        "tests_present": false,
+        "ci_present": false,
+        "security_policy": false,
+        "contributing": false,
+        "changelog": false
+      },
+      "recommendations": [
+        {
+          "check": "topics",
+          "action": "Add only accurate technical topics from the implementation."
+        },
+        {
+          "check": "tests_present",
+          "action": "Add tests for the documented behavior."
+        },
+        {
+          "check": "ci_present",
+          "action": "Run the actual tests as a required CI check."
+        },
+        {
+          "check": "security_policy",
+          "action": "Document supported versions and private vulnerability reporting."
+        },
+        {
+          "check": "contributing",
+          "action": "Explain development setup and how to submit a useful change."
+        },
+        {
+          "check": "changelog",
+          "action": "Record user-visible changes for the next real release."
+        }
+      ],
+      "tree_complete": true,
+      "release_ready": false,
+      "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
+      "demand": "unknown; stars and documentation do not establish developer demand",
+      "differentiation": "requires human assessment",
+      "tree_sha": "1d92e1f51cf96cd73f5feef9e68e400d265a38ea",
+      "forks": 0,
+      "open_issues_and_prs": 0,
+      "subscribers": null,
+      "description": "Practical guides to full-stack security, local AI product design and reliable macOS releases.",
+      "default_branch": "main",
+      "discussions_enabled": false,
+      "opportunity": {
+        "score": 27.75,
+        "weights": {
+          "developer_demand": 0.3,
+          "demonstrable_value": 0.25,
+          "technical_readiness": 0.2,
+          "discoverability": 0.15,
+          "maintenance_quality": 0.1
+        },
+        "components": {
+          "developer_demand": 0,
+          "demonstrable_value": 50,
+          "technical_readiness": 20,
+          "discoverability": 75,
+          "maintenance_quality": 0
+        },
+        "evidence": {
+          "developer_demand": {
+            "stars": 0,
+            "forks": 0,
+            "formula": "min(100, 4*stars + 8*forks)",
+            "limitation": "Sparse popularity proxy; underlying demand unknown."
+          },
+          "verified_tests_and_demo": null,
+          "file_presence_checks": {
+            "description": true,
+            "topics": false,
+            "license": true,
+            "readme": true,
+            "quickstart": true,
+            "example_documented": true,
+            "tests_present": false,
+            "ci_present": false,
+            "security_policy": false,
+            "contributing": false,
+            "changelog": false
+          },
+          "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
+        }
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "login": "mxyng",
+      "sources": [
+        "ollama/ollama"
+      ],
+      "contributions": 1294,
+      "id": "2372640",
+      "score": 65,
+      "matching_interests": [
+        "ollama",
+        "python"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "url": "https://github.com/mxyng",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "antfu",
+      "sources": [
+        "vitest-dev/vitest"
+      ],
+      "contributions": 1093,
+      "id": "11247099",
+      "score": 45,
+      "matching_interests": [
+        "typescript"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "url": "https://github.com/antfu",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "lucasfernog",
+      "sources": [
+        "tauri-apps/tauri"
+      ],
+      "contributions": 2250,
+      "id": "20051258",
+      "score": 45,
+      "matching_interests": [
+        "typescript"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "url": "https://github.com/lucasfernog",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "sheremet-va",
+      "sources": [
+        "vitest-dev/vitest"
+      ],
+      "contributions": 2097,
+      "id": "16173870",
+      "score": 45,
+      "matching_interests": [
+        "typescript"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "url": "https://github.com/sheremet-va",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "dhiltgen",
+      "sources": [
+        "ollama/ollama"
+      ],
+      "contributions": 1079,
+      "id": "4033016",
+      "score": 25,
+      "matching_interests": [],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "url": "https://github.com/dhiltgen",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "jmorganca",
+      "sources": [
+        "ollama/ollama"
+      ],
+      "contributions": 931,
+      "id": "251292",
+      "score": 10,
+      "matching_interests": [],
+      "recent_public_repo_activity": false,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "url": "https://github.com/jmorganca",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    }
+  ],
+  "opportunities": [
+    {
+      "url": "https://github.com/ollama/ollama/issues/12954",
+      "title": "app: sidebar animates opening on load instead of appearing open",
+      "repository": "ollama/ollama",
+      "action": "Reproduce, read contribution rules, then assess a useful fix."
+    },
+    {
+      "url": "https://github.com/ollama/ollama/issues/10333",
+      "title": "CLI: image path not recognized correctly",
+      "repository": "ollama/ollama",
+      "action": "Reproduce, read contribution rules, then assess a useful fix."
+    }
+  ],
+  "queue": [
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/mxyng",
+      "reason": [
+        "ollama",
+        "python"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "6e89d44d2be174730879"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/antfu",
+      "reason": [
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "8ff7dd4680aa79dc12a8"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/lucasfernog",
+      "reason": [
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "5bb63d52a65cf5d3ba10"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/sheremet-va",
+      "reason": [
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "ec1afdcd65f89b728eac"
+    },
+    {
+      "operation": "release_announcement_draft",
+      "repository": "anistack72/ai-runtime-doctor",
+      "approval": "pending",
+      "execute": false,
+      "text": "anistack72/ai-runtime-doctor: Read-only diagnostics for Ollama and LM Studio: local model inventory, bounded requests and JSON/HTML reports.\nSource and documented examples: https://github.com/anistack72/ai-runtime-doctor\nDraft only: verify tests, demo, release tag and limitations before publishing.",
+      "community_opportunities": [
+        {
+          "url": "https://github.com/anistack72/ai-runtime-doctor/releases",
+          "requirement": "Publish only a tested, versioned change."
+        },
+        {
+          "url": "https://dev.to/new",
+          "requirement": "Technical walkthrough; disclose authorship and verify community rules."
+        },
+        {
+          "url": "https://news.ycombinator.com/showhn.html",
+          "requirement": "Runnable original work; read Show HN rules and engage personally."
+        }
+      ],
+      "id": "e618ececd2227b73f7e4"
+    },
+    {
+      "operation": "release_announcement_draft",
+      "repository": "anistack72/asset-budget",
+      "approval": "pending",
+      "execute": false,
+      "text": "anistack72/asset-budget: Enforce raw, gzip and Brotli build-size budgets in CI. Per-file limits, largest-asset reports and zero runtime dependencies.\nSource and documented examples: https://github.com/anistack72/asset-budget\nDraft only: verify tests, demo, release tag and limitations before publishing.",
+      "community_opportunities": [
+        {
+          "url": "https://github.com/anistack72/asset-budget/releases",
+          "requirement": "Publish only a tested, versioned change."
+        },
+        {
+          "url": "https://dev.to/new",
+          "requirement": "Technical walkthrough; disclose authorship and verify community rules."
+        },
+        {
+          "url": "https://news.ycombinator.com/showhn.html",
+          "requirement": "Runnable original work; read Show HN rules and engage personally."
+        }
+      ],
+      "id": "f059c43d975010bc712f"
+    },
+    {
+      "operation": "release_announcement_draft",
+      "repository": "anistack72/mac-release-gate",
+      "approval": "pending",
+      "execute": false,
+      "text": "anistack72/mac-release-gate: Read-only macOS release checks: code signatures, Developer ID, Gatekeeper, stapled notarization tickets and streaming SHA-256.\nSource and documented examples: https://github.com/anistack72/mac-release-gate\nDraft only: verify tests, demo, release tag and limitations before publishing.",
+      "community_opportunities": [
+        {
+          "url": "https://github.com/anistack72/mac-release-gate/releases",
+          "requirement": "Publish only a tested, versioned change."
+        },
+        {
+          "url": "https://dev.to/new",
+          "requirement": "Technical walkthrough; disclose authorship and verify community rules."
+        },
+        {
+          "url": "https://news.ycombinator.com/showhn.html",
+          "requirement": "Runnable original work; read Show HN rules and engage personally."
+        }
+      ],
+      "id": "e8a71dd0031a44d63ad6"
+    },
+    {
+      "operation": "release_announcement_draft",
+      "repository": "anistack72/security-report-kit",
+      "approval": "pending",
+      "execute": false,
+      "text": "anistack72/security-report-kit: Normalize Gitleaks, Trivy and Semgrep findings. Redact secret fields, compare baselines and gate new or escalated findings.\nSource and documented examples: https://github.com/anistack72/security-report-kit\nDraft only: verify tests, demo, release tag and limitations before publishing.",
+      "community_opportunities": [
+        {
+          "url": "https://github.com/anistack72/security-report-kit/releases",
+          "requirement": "Publish only a tested, versioned change."
+        },
+        {
+          "url": "https://dev.to/new",
+          "requirement": "Technical walkthrough; disclose authorship and verify community rules."
+        },
+        {
+          "url": "https://news.ycombinator.com/showhn.html",
+          "requirement": "Runnable original work; read Show HN rules and engage personally."
+        }
+      ],
+      "id": "bb1bc80ed27260891c41"
+    },
+    {
+      "operation": "release_announcement_draft",
+      "repository": "anistack72/web-audit-workbench",
+      "approval": "pending",
+      "execute": false,
+      "text": "anistack72/web-audit-workbench: Bounded same-origin web auditing, HTTP security checks and ZAP/Nuclei report adapters. Node.js, zero runtime dependencies.\nSource and documented examples: https://github.com/anistack72/web-audit-workbench\nDraft only: verify tests, demo, release tag and limitations before publishing.",
+      "community_opportunities": [
+        {
+          "url": "https://github.com/anistack72/web-audit-workbench/releases",
+          "requirement": "Publish only a tested, versioned change."
+        },
+        {
+          "url": "https://dev.to/new",
+          "requirement": "Technical walkthrough; disclose authorship and verify community rules."
+        },
+        {
+          "url": "https://news.ycombinator.com/showhn.html",
+          "requirement": "Runnable original work; read Show HN rules and engage personally."
+        }
+      ],
+      "id": "5ffbaa73f110a150262f"
+    },
+    {
+      "operation": "release_announcement_draft",
+      "repository": "anistack72/anistack72",
+      "approval": "pending",
+      "execute": false,
+      "text": "anistack72/anistack72: Anis Mosbah · Software engineer · macOS, web & local AI\nSource and documented examples: https://github.com/anistack72/anistack72\nDraft only: verify tests, demo, release tag and limitations before publishing.",
+      "community_opportunities": [
+        {
+          "url": "https://github.com/anistack72/anistack72/releases",
+          "requirement": "Publish only a tested, versioned change."
+        },
+        {
+          "url": "https://dev.to/new",
+          "requirement": "Technical walkthrough; disclose authorship and verify community rules."
+        },
+        {
+          "url": "https://news.ycombinator.com/showhn.html",
+          "requirement": "Runnable original work; read Show HN rules and engage personally."
+        }
+      ],
+      "id": "204284fb1d3d1f1d9d92"
+    },
+    {
+      "operation": "release_announcement_draft",
+      "repository": "anistack72/engineering-playbook",
+      "approval": "pending",
+      "execute": false,
+      "text": "anistack72/engineering-playbook: Practical guides to full-stack security, local AI product design and reliable macOS releases.\nSource and documented examples: https://github.com/anistack72/engineering-playbook\nDraft only: verify tests, demo, release tag and limitations before publishing.",
+      "community_opportunities": [
+        {
+          "url": "https://github.com/anistack72/engineering-playbook/releases",
+          "requirement": "Publish only a tested, versioned change."
+        },
+        {
+          "url": "https://dev.to/new",
+          "requirement": "Technical walkthrough; disclose authorship and verify community rules."
+        },
+        {
+          "url": "https://news.ycombinator.com/showhn.html",
+          "requirement": "Runnable original work; read Show HN rules and engage personally."
+        }
+      ],
+      "id": "2ec518210eea7a633951"
+    }
+  ],
+  "achievements": {
+    "Pull Shark": {
+      "observed_merged_prs": 0,
+      "source": "https://github.com/search?q=author%3Aanistack72%20is%3Apr%20is%3Amerged&type=pullrequests",
+      "caveat": "Public searchable PRs; usefulness, eligibility exclusions and award require verification.",
+      "award_verified": false,
+      "eligibility": "community-documented; GitHub controls current availability and awards"
+    },
+    "Starstruck": {
+      "max_observed_repo_stars": 0,
+      "repositories": {
+        "anistack72/ai-runtime-doctor": 0,
+        "anistack72/asset-budget": 0,
+        "anistack72/mac-release-gate": 0,
+        "anistack72/security-report-kit": 0,
+        "anistack72/web-audit-workbench": 0,
+        "anistack72/anistack72": 0,
+        "anistack72/engineering-playbook": 0
+      },
+      "award_verified": false,
+      "eligibility": "community-documented; GitHub controls current availability and awards"
+    },
+    "Quickdraw": {
+      "status": "unverified",
+      "next_step": "Resolve a real issue when its fix is verified; do not create an issue for speed.",
+      "award_verified": false,
+      "eligibility": "community-documented; GitHub controls current availability and awards"
+    },
+    "YOLO": {
+      "status": "unverified",
+      "next_step": "Observe normal merges only; never bypass required review to pursue a badge.",
+      "award_verified": false,
+      "eligibility": "community-documented; GitHub controls current availability and awards"
+    },
+    "Pair Extraordinaire": {
+      "status": "unverified",
+      "next_step": "Collect commit and merged-PR evidence after real coauthored work.",
+      "award_verified": false,
+      "eligibility": "community-documented; GitHub controls current availability and awards"
+    },
+    "Galaxy Brain": {
+      "accepted_answers_in_configured_repos": 0,
+      "evidence_urls": [],
+      "coverage": "configured repositories only",
+      "award_verified": false,
+      "eligibility": "community-documented; GitHub controls current availability and awards"
+    },
+    "Public Sponsor": {
+      "status": "unverified",
+      "requires": "An actual public sponsorship; no payments are automated.",
+      "award_verified": false,
+      "eligibility": "community-documented; GitHub controls current availability and awards"
+    },
+    "contribution_window": {
+      "startedAt": "2025-11-16T00:00:00Z",
+      "endedAt": "2026-11-22T23:59:59Z",
+      "totalPullRequestContributions": 1,
+      "totalPullRequestReviewContributions": 0,
+      "totalIssueContributions": 0
+    },
+    "ineligible": [
+      "Arctic Code Vault Contributor",
+      "Mars 2020 Helicopter Contributor"
+    ],
+    "unknown_unreleased": [
+      "Heart On Your Sleeve",
+      "Open Sourcerer"
+    ],
+    "verification": "Inspect https://github.com/anistack72?tab=achievements; API evidence does not confirm awards."
+  },
+  "analytics": {
+    "daily_observed_interval": null,
+    "weekly_observed_interval": null,
+    "weekly_status": "insufficient_history",
+    "attribution": "unknown: GitHub does not expose which campaign caused a star or follow",
+    "conversion_rate": null,
+    "conversion_reason": "No measured unique visitor denominator or campaign attribution."
+  },
+  "capabilities": {
+    "discovery": true,
+    "graphql": true,
+    "external_mutations": false,
+    "release_publish": false
+  },
+  "requests": 39,
+  "campaign": {
+    "phase": "foundation",
+    "start": "2026-11-21",
+    "end": "2026-12-21",
+    "next_poll_hours": 24,
+    "top_two": [
+      "anistack72/ai-runtime-doctor",
+      "anistack72/asset-budget"
+    ],
+    "starstruck_target": {
+      "stars_on_one_repository": 16,
+      "authority": "Community-documented threshold; no award guarantee."
+    },
+    "tasks": [
+      {
+        "kind": "engineering_recommendation",
+        "repository": "anistack72/ai-runtime-doctor",
+        "check": "changelog",
+        "action": "Record user-visible changes for the next real release.",
+        "priority": 53.25,
+        "risk": "requires_scoped_implementation",
+        "status": "queued"
+      },
+      {
+        "kind": "engineering_recommendation",
+        "repository": "anistack72/ai-runtime-doctor",
+        "check": "topics",
+        "action": "Add only accurate technical topics from the implementation.",
+        "priority": 53.25,
+        "risk": "requires_scoped_implementation",
+        "status": "queued"
+      },
+      {
+        "kind": "engineering_recommendation",
+        "repository": "anistack72/asset-budget",
+        "check": "changelog",
+        "action": "Record user-visible changes for the next real release.",
+        "priority": 53.25,
+        "risk": "requires_scoped_implementation",
+        "status": "queued"
+      },
+      {
+        "kind": "engineering_recommendation",
+        "repository": "anistack72/asset-budget",
+        "check": "topics",
+        "action": "Add only accurate technical topics from the implementation.",
+        "priority": 53.25,
+        "risk": "requires_scoped_implementation",
+        "status": "queued"
+      }
+    ],
+    "automatic_executor": [
+      "collect_public_metrics",
+      "rank_opportunities",
+      "generate_evidence_briefs",
+      "generate_announcement_drafts",
+      "persist_checkpoints"
+    ],
+    "external_publishing": "No external channel is connected or authorized for posting."
+  },
+  "achievement_states": {
+    "transitions": [
+      "UNKNOWN",
+      "REQUIREMENTS_VERIFIED",
+      "ELIGIBLE",
+      "ACTION_COMPLETED",
+      "GITHUB_VERIFIED"
+    ],
+    "achievements": {
+      "Pull Shark": {
+        "state": "UNKNOWN",
+        "observed_evidence": {
+          "observed_merged_prs": 0,
+          "source": "https://github.com/search?q=author%3Aanistack72%20is%3Apr%20is%3Amerged&type=pullrequests",
+          "caveat": "Public searchable PRs; usefulness, eligibility exclusions and award require verification.",
+          "award_verified": false,
+          "eligibility": "community-documented; GitHub controls current availability and awards"
+        },
+        "blocked_transition": "Needs current requirement verification and authoritative award evidence."
+      },
+      "Quickdraw": {
+        "state": "UNKNOWN",
+        "observed_evidence": {
+          "status": "unverified",
+          "next_step": "Resolve a real issue when its fix is verified; do not create an issue for speed.",
+          "award_verified": false,
+          "eligibility": "community-documented; GitHub controls current availability and awards"
+        },
+        "blocked_transition": "Needs current requirement verification and authoritative award evidence."
+      },
+      "YOLO": {
+        "state": "UNKNOWN",
+        "observed_evidence": {
+          "status": "unverified",
+          "next_step": "Observe normal merges only; never bypass required review to pursue a badge.",
+          "award_verified": false,
+          "eligibility": "community-documented; GitHub controls current availability and awards"
+        },
+        "blocked_transition": "Needs current requirement verification and authoritative award evidence."
+      },
+      "Pair Extraordinaire": {
+        "state": "UNKNOWN",
+        "observed_evidence": {
+          "status": "unverified",
+          "next_step": "Collect commit and merged-PR evidence after real coauthored work.",
+          "award_verified": false,
+          "eligibility": "community-documented; GitHub controls current availability and awards"
+        },
+        "blocked_transition": "Needs current requirement verification and authoritative award evidence."
+      },
+      "Galaxy Brain": {
+        "state": "UNKNOWN",
+        "observed_evidence": {
+          "accepted_answers_in_configured_repos": 0,
+          "evidence_urls": [],
+          "coverage": "configured repositories only",
+          "award_verified": false,
+          "eligibility": "community-documented; GitHub controls current availability and awards"
+        },
+        "blocked_transition": "Needs current requirement verification and authoritative award evidence."
+      },
+      "Starstruck": {
+        "state": "UNKNOWN",
+        "observed_evidence": {
+          "max_observed_repo_stars": 0,
+          "repositories": {
+            "anistack72/ai-runtime-doctor": 0,
+            "anistack72/asset-budget": 0,
+            "anistack72/mac-release-gate": 0,
+            "anistack72/security-report-kit": 0,
+            "anistack72/web-audit-workbench": 0,
+            "anistack72/anistack72": 0,
+            "anistack72/engineering-playbook": 0
+          },
+          "award_verified": false,
+          "eligibility": "community-documented; GitHub controls current availability and awards"
+        },
+        "blocked_transition": "Needs current requirement verification and authoritative award evidence."
+      },
+      "Public Sponsor": {
+        "state": "UNKNOWN",
+        "observed_evidence": {
+          "status": "unverified",
+          "requires": "An actual public sponsorship; no payments are automated.",
+          "award_verified": false,
+          "eligibility": "community-documented; GitHub controls current availability and awards"
+        },
+        "blocked_transition": "Needs current requirement verification and authoritative award evidence."
+      }
+    },
+    "note": "Public API evidence is not an award endpoint. A hidden or missing badge is not proof of ineligibility."
+  }
+}
