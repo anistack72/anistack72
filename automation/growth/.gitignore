@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+var/
+reports/
+*.sqlite3*
+.env*

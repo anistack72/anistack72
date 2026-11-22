@@ -1,0 +1,227 @@
+[
+  {
+    "repository": "anistack72/ai-runtime-doctor",
+    "commit": "af0ce9d3070209ea6a36fe0b0c1158f32c7055e1",
+    "tree": "0fa02870413ef649a7abbf1fe9d0a950197fc90a",
+    "verified_at": "2026-11-21T19:48:04.736071+00:00",
+    "node": "v24.20.0",
+    "platform": "macOS arm64",
+    "results": [
+      {
+        "command": [
+          "npm",
+          "run",
+          "check"
+        ],
+        "exit_code": 0,
+        "log": "ai-runtime-doctor-npm-run-check.log"
+      },
+      {
+        "command": [
+          "npm",
+          "test"
+        ],
+        "exit_code": 0,
+        "log": "ai-runtime-doctor-npm-test.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs"
+        ],
+        "exit_code": 0,
+        "log": "ai-runtime-doctor-node-demo.mjs.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs",
+          "html"
+        ],
+        "exit_code": 0,
+        "log": "ai-runtime-doctor-node-demo.mjs-html.log"
+      }
+    ],
+    "passed": true
+  },
+  {
+    "repository": "anistack72/web-audit-workbench",
+    "commit": "d8c177d640ca7982119113f9175ffcc7a206e250",
+    "tree": "b16dfa474ba36097b9968003003381b4892296a9",
+    "verified_at": "2026-11-21T19:48:04.734735+00:00",
+    "node": "v24.20.0",
+    "platform": "macOS arm64",
+    "results": [
+      {
+        "command": [
+          "npm",
+          "run",
+          "check"
+        ],
+        "exit_code": 0,
+        "log": "web-audit-workbench-npm-run-check.log"
+      },
+      {
+        "command": [
+          "npm",
+          "test"
+        ],
+        "exit_code": 0,
+        "log": "web-audit-workbench-npm-test.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs"
+        ],
+        "exit_code": 0,
+        "log": "web-audit-workbench-node-demo.mjs.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs",
+          "html"
+        ],
+        "exit_code": 0,
+        "log": "web-audit-workbench-node-demo.mjs-html.log"
+      }
+    ],
+    "passed": true
+  },
+  {
+    "repository": "anistack72/asset-budget",
+    "commit": "e4c7496ea81da1aeb075f587ac5b3643c1562df0",
+    "tree": "fa2e4620c73f6cdbd4a071a2082247c2533d9942",
+    "verified_at": "2026-11-21T19:48:04.439560+00:00",
+    "node": "v24.20.0",
+    "platform": "macOS arm64",
+    "results": [
+      {
+        "command": [
+          "npm",
+          "run",
+          "check"
+        ],
+        "exit_code": 0,
+        "log": "asset-budget-npm-run-check.log"
+      },
+      {
+        "command": [
+          "npm",
+          "test"
+        ],
+        "exit_code": 0,
+        "log": "asset-budget-npm-test.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs"
+        ],
+        "exit_code": 0,
+        "log": "asset-budget-node-demo.mjs.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs",
+          "html"
+        ],
+        "exit_code": 0,
+        "log": "asset-budget-node-demo.mjs-html.log"
+      }
+    ],
+    "passed": true
+  },
+  {
+    "repository": "anistack72/mac-release-gate",
+    "commit": "8bd636ade193392f7b7315e70953b95eb468d3f5",
+    "tree": "90160f882cddd52ff101c5f620bca2d3a8e409e3",
+    "verified_at": "2026-11-21T19:48:05.391326+00:00",
+    "node": "v24.20.0",
+    "platform": "macOS arm64",
+    "results": [
+      {
+        "command": [
+          "npm",
+          "run",
+          "check"
+        ],
+        "exit_code": 0,
+        "log": "mac-release-gate-npm-run-check.log"
+      },
+      {
+        "command": [
+          "npm",
+          "test"
+        ],
+        "exit_code": 0,
+        "log": "mac-release-gate-npm-test.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs"
+        ],
+        "exit_code": 0,
+        "log": "mac-release-gate-node-demo.mjs.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs",
+          "html"
+        ],
+        "exit_code": 0,
+        "log": "mac-release-gate-node-demo.mjs-html.log"
+      }
+    ],
+    "passed": true
+  },
+  {
+    "repository": "anistack72/security-report-kit",
+    "commit": "be39fb531f5e9a0c3489d1ef3c3a46b8325425d1",
+    "tree": "84ec6ffeceb6040683d700687205738ed490c07c",
+    "verified_at": "2026-11-21T19:48:05.519499+00:00",
+    "node": "v24.20.0",
+    "platform": "macOS arm64",
+    "results": [
+      {
+        "command": [
+          "npm",
+          "run",
+          "check"
+        ],
+        "exit_code": 0,
+        "log": "security-report-kit-npm-run-check.log"
+      },
+      {
+        "command": [
+          "npm",
+          "test"
+        ],
+        "exit_code": 0,
+        "log": "security-report-kit-npm-test.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs"
+        ],
+        "exit_code": 0,
+        "log": "security-report-kit-node-demo.mjs.log"
+      },
+      {
+        "command": [
+          "node",
+          "demo.mjs",
+          "html"
+        ],
+        "exit_code": 0,
+        "log": "security-report-kit-node-demo.mjs-html.log"
+      }
+    ],
+    "passed": true
+  }
+]

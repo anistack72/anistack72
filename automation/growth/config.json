@@ -1,0 +1,11 @@
+{
+  "account": "anistack72",
+  "request_budget": 180,
+  "reserve": 20,
+  "campaign_start": "2026-11-21",
+  "campaign_end": "2026-12-21",
+  "discovery_seeds": ["ollama/ollama", "tauri-apps/tauri", "vitest-dev/vitest"],
+  "interests": ["python", "typescript", "security", "ollama", "local-ai", "macos", "performance", "tauri"],
+  "max_candidates": 6,
+  "discussion_repositories": ["anistack72/web-audit-workbench", "anistack72/ai-runtime-doctor"]
+}
