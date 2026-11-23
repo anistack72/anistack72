@@ -1,23 +1,24 @@
-# Growth intelligence — 2026-11-22
+# Growth intelligence — 2026-11-23
 
 Observed public data; no campaign or badge award attribution.
 
 | Repository | Opportunity heuristic | Stars |
 |---|---:|---:|
-| anistack72/ai-runtime-doctor | 43.25/100 | 0 |
-| anistack72/asset-budget | 43.25/100 | 0 |
-| anistack72/mac-release-gate | 43.25/100 | 0 |
-| anistack72/security-report-kit | 43.25/100 | 0 |
-| anistack72/web-audit-workbench | 43.25/100 | 0 |
+| anistack72/ai-runtime-doctor | 66.25/100 | 0 |
+| anistack72/asset-budget | 66.25/100 | 0 |
+| anistack72/mac-release-gate | 63.75/100 | 0 |
+| anistack72/security-report-kit | 63.75/100 | 0 |
+| anistack72/web-audit-workbench | 63.75/100 | 0 |
 | anistack72/anistack72 | 30.5/100 | 0 |
 | anistack72/engineering-playbook | 27.75/100 | 0 |
 
 ## Useful next work
 
+Observed campaign interval: 2026-11-22 to 2026-11-23.
+Net follower change: 0. Genuine identity and causal attribution are unverified.
+
 - anistack72/ai-runtime-doctor: Add only accurate technical topics from the implementation.
-- anistack72/ai-runtime-doctor: Record user-visible changes for the next real release.
 - anistack72/asset-budget: Add only accurate technical topics from the implementation.
-- anistack72/asset-budget: Record user-visible changes for the next real release.
 - anistack72/mac-release-gate: Add only accurate technical topics from the implementation.
 - anistack72/mac-release-gate: Record user-visible changes for the next real release.
 

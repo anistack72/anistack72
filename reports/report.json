@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "account": "anistack72",
-  "day": "2026-11-22",
-  "observed_at": "2026-11-22T23:42:22.301160+00:00",
+  "day": "2026-11-23",
+  "observed_at": "2026-11-23T19:28:39.151404+00:00",
   "status": "complete",
   "metrics": {
     "followers": 1,
@@ -10,7 +10,7 @@
     "stars_received_owned_active_public": 0
   },
   "relationships": {
-    "baseline": true,
+    "baseline": false,
     "new_followers": [],
     "lost_followers": [],
     "you_followed": [],
@@ -29,7 +29,7 @@
       "stars": 0,
       "language": "JavaScript",
       "topics": [],
-      "readiness_score": 82,
+      "readiness_score": 91,
       "checks": {
         "description": true,
         "topics": false,
@@ -41,16 +41,12 @@
         "ci_present": true,
         "security_policy": true,
         "contributing": true,
-        "changelog": false
+        "changelog": true
       },
       "recommendations": [
         {
           "check": "topics",
           "action": "Add only accurate technical topics from the implementation."
-        },
-        {
-          "check": "changelog",
-          "action": "Record user-visible changes for the next real release."
         }
       ],
       "tree_complete": true,
@@ -58,7 +54,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "af0ce9d3070209ea6a36fe0b0c1158f32c7055e1",
+      "tree_sha": "acec3d664c843026d98cf0d29bd2f4786d496fef",
+      "commit_sha": "0016669c42e7ea4b9c34d39d9114fb3acc52a345",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -66,7 +63,7 @@
       "default_branch": "main",
       "discussions_enabled": false,
       "opportunity": {
-        "score": 43.25,
+        "score": 66.25,
         "weights": {
           "developer_demand": 0.3,
           "demonstrable_value": 0.25,
@@ -76,10 +73,10 @@
         },
         "components": {
           "developer_demand": 0,
-          "demonstrable_value": 50,
-          "technical_readiness": 60,
+          "demonstrable_value": 100,
+          "technical_readiness": 100,
           "discoverability": 75,
-          "maintenance_quality": 75
+          "maintenance_quality": 100
         },
         "evidence": {
           "developer_demand": {
@@ -88,7 +85,36 @@
             "formula": "min(100, 4*stars + 8*forks)",
             "limitation": "Sparse popularity proxy; underlying demand unknown."
           },
-          "verified_tests_and_demo": null,
+          "verified_tests_and_demo": {
+            "repository": "anistack72/ai-runtime-doctor",
+            "commit": "0016669c42e7ea4b9c34d39d9114fb3acc52a345",
+            "tree": "acec3d664c843026d98cf0d29bd2f4786d496fef",
+            "verified_at": "2026-11-22T23:46:48.693479+00:00",
+            "node": "22 and 24",
+            "platform": "CI: Linux, macOS, Windows",
+            "results": [
+              {
+                "command": [
+                  "npm",
+                  "run",
+                  "check"
+                ],
+                "exit_code": 0
+              },
+              {
+                "command": [
+                  "npm",
+                  "test"
+                ],
+                "exit_code": 0,
+                "tests": 15,
+                "includes": "terminal/JSON/HTML fixture demo subprocesses"
+              }
+            ],
+            "passed": true,
+            "validation_origin": "Successful PR CI; merged tree identical to tested tree",
+            "workflow_url": "https://github.com/anistack72/ai-runtime-doctor/actions/runs/45084776585"
+          },
           "file_presence_checks": {
             "description": true,
             "topics": false,
@@ -100,7 +126,7 @@
             "ci_present": true,
             "security_policy": true,
             "contributing": true,
-            "changelog": false
+            "changelog": true
           },
           "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
         }
@@ -112,7 +138,7 @@
       "stars": 0,
       "language": "JavaScript",
       "topics": [],
-      "readiness_score": 82,
+      "readiness_score": 91,
       "checks": {
         "description": true,
         "topics": false,
@@ -124,16 +150,12 @@
         "ci_present": true,
         "security_policy": true,
         "contributing": true,
-        "changelog": false
+        "changelog": true
       },
       "recommendations": [
         {
           "check": "topics",
           "action": "Add only accurate technical topics from the implementation."
-        },
-        {
-          "check": "changelog",
-          "action": "Record user-visible changes for the next real release."
         }
       ],
       "tree_complete": true,
@@ -141,7 +163,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "e4c7496ea81da1aeb075f587ac5b3643c1562df0",
+      "tree_sha": "892fb2bca9b09e889b33231ef14b7bcd2558091e",
+      "commit_sha": "4d2059ae081430a8d10afbb8329a188499949662",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -149,7 +172,7 @@
       "default_branch": "main",
       "discussions_enabled": false,
       "opportunity": {
-        "score": 43.25,
+        "score": 66.25,
         "weights": {
           "developer_demand": 0.3,
           "demonstrable_value": 0.25,
@@ -159,10 +182,10 @@
         },
         "components": {
           "developer_demand": 0,
-          "demonstrable_value": 50,
-          "technical_readiness": 60,
+          "demonstrable_value": 100,
+          "technical_readiness": 100,
           "discoverability": 75,
-          "maintenance_quality": 75
+          "maintenance_quality": 100
         },
         "evidence": {
           "developer_demand": {
@@ -171,7 +194,36 @@
             "formula": "min(100, 4*stars + 8*forks)",
             "limitation": "Sparse popularity proxy; underlying demand unknown."
           },
-          "verified_tests_and_demo": null,
+          "verified_tests_and_demo": {
+            "repository": "anistack72/asset-budget",
+            "commit": "4d2059ae081430a8d10afbb8329a188499949662",
+            "tree": "892fb2bca9b09e889b33231ef14b7bcd2558091e",
+            "verified_at": "2026-11-22T23:46:48.693688+00:00",
+            "node": "22 and 24",
+            "platform": "CI: Linux, macOS, Windows",
+            "results": [
+              {
+                "command": [
+                  "npm",
+                  "run",
+                  "check"
+                ],
+                "exit_code": 0
+              },
+              {
+                "command": [
+                  "npm",
+                  "test"
+                ],
+                "exit_code": 0,
+                "tests": 11,
+                "includes": "terminal/JSON/HTML fixture demo subprocesses"
+              }
+            ],
+            "passed": true,
+            "validation_origin": "Successful PR CI; merged tree identical to tested tree",
+            "workflow_url": "https://github.com/anistack72/asset-budget/actions/runs/45084782943"
+          },
           "file_presence_checks": {
             "description": true,
             "topics": false,
@@ -183,7 +235,7 @@
             "ci_present": true,
             "security_policy": true,
             "contributing": true,
-            "changelog": false
+            "changelog": true
           },
           "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
         }
@@ -224,7 +276,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "8bd636ade193392f7b7315e70953b95eb468d3f5",
+      "tree_sha": "90160f882cddd52ff101c5f620bca2d3a8e409e3",
+      "commit_sha": "8bd636ade193392f7b7315e70953b95eb468d3f5",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -232,7 +285,7 @@
       "default_branch": "main",
       "discussions_enabled": false,
       "opportunity": {
-        "score": 43.25,
+        "score": 63.75,
         "weights": {
           "developer_demand": 0.3,
           "demonstrable_value": 0.25,
@@ -242,8 +295,8 @@
         },
         "components": {
           "developer_demand": 0,
-          "demonstrable_value": 50,
-          "technical_readiness": 60,
+          "demonstrable_value": 100,
+          "technical_readiness": 100,
           "discoverability": 75,
           "maintenance_quality": 75
         },
@@ -254,7 +307,51 @@
             "formula": "min(100, 4*stars + 8*forks)",
             "limitation": "Sparse popularity proxy; underlying demand unknown."
           },
-          "verified_tests_and_demo": null,
+          "verified_tests_and_demo": {
+            "repository": "anistack72/mac-release-gate",
+            "commit": "8bd636ade193392f7b7315e70953b95eb468d3f5",
+            "tree": "90160f882cddd52ff101c5f620bca2d3a8e409e3",
+            "verified_at": "2026-11-21T19:48:05.391326+00:00",
+            "node": "v24.20.0",
+            "platform": "macOS arm64",
+            "results": [
+              {
+                "command": [
+                  "npm",
+                  "run",
+                  "check"
+                ],
+                "exit_code": 0,
+                "log": "mac-release-gate-npm-run-check.log"
+              },
+              {
+                "command": [
+                  "npm",
+                  "test"
+                ],
+                "exit_code": 0,
+                "log": "mac-release-gate-npm-test.log"
+              },
+              {
+                "command": [
+                  "node",
+                  "demo.mjs"
+                ],
+                "exit_code": 0,
+                "log": "mac-release-gate-node-demo.mjs.log"
+              },
+              {
+                "command": [
+                  "node",
+                  "demo.mjs",
+                  "html"
+                ],
+                "exit_code": 0,
+                "log": "mac-release-gate-node-demo.mjs-html.log"
+              }
+            ],
+            "passed": true
+          },
           "file_presence_checks": {
             "description": true,
             "topics": false,
@@ -307,7 +404,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "be39fb531f5e9a0c3489d1ef3c3a46b8325425d1",
+      "tree_sha": "84ec6ffeceb6040683d700687205738ed490c07c",
+      "commit_sha": "be39fb531f5e9a0c3489d1ef3c3a46b8325425d1",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -315,7 +413,7 @@
       "default_branch": "main",
       "discussions_enabled": false,
       "opportunity": {
-        "score": 43.25,
+        "score": 63.75,
         "weights": {
           "developer_demand": 0.3,
           "demonstrable_value": 0.25,
@@ -325,8 +423,8 @@
         },
         "components": {
           "developer_demand": 0,
-          "demonstrable_value": 50,
-          "technical_readiness": 60,
+          "demonstrable_value": 100,
+          "technical_readiness": 100,
           "discoverability": 75,
           "maintenance_quality": 75
         },
@@ -337,7 +435,51 @@
             "formula": "min(100, 4*stars + 8*forks)",
             "limitation": "Sparse popularity proxy; underlying demand unknown."
           },
-          "verified_tests_and_demo": null,
+          "verified_tests_and_demo": {
+            "repository": "anistack72/security-report-kit",
+            "commit": "be39fb531f5e9a0c3489d1ef3c3a46b8325425d1",
+            "tree": "84ec6ffeceb6040683d700687205738ed490c07c",
+            "verified_at": "2026-11-21T19:48:05.519499+00:00",
+            "node": "v24.20.0",
+            "platform": "macOS arm64",
+            "results": [
+              {
+                "command": [
+                  "npm",
+                  "run",
+                  "check"
+                ],
+                "exit_code": 0,
+                "log": "security-report-kit-npm-run-check.log"
+              },
+              {
+                "command": [
+                  "npm",
+                  "test"
+                ],
+                "exit_code": 0,
+                "log": "security-report-kit-npm-test.log"
+              },
+              {
+                "command": [
+                  "node",
+                  "demo.mjs"
+                ],
+                "exit_code": 0,
+                "log": "security-report-kit-node-demo.mjs.log"
+              },
+              {
+                "command": [
+                  "node",
+                  "demo.mjs",
+                  "html"
+                ],
+                "exit_code": 0,
+                "log": "security-report-kit-node-demo.mjs-html.log"
+              }
+            ],
+            "passed": true
+          },
           "file_presence_checks": {
             "description": true,
             "topics": false,
@@ -390,7 +532,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "d8c177d640ca7982119113f9175ffcc7a206e250",
+      "tree_sha": "b16dfa474ba36097b9968003003381b4892296a9",
+      "commit_sha": "d8c177d640ca7982119113f9175ffcc7a206e250",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -398,7 +541,7 @@
       "default_branch": "main",
       "discussions_enabled": false,
       "opportunity": {
-        "score": 43.25,
+        "score": 63.75,
         "weights": {
           "developer_demand": 0.3,
           "demonstrable_value": 0.25,
@@ -408,8 +551,8 @@
         },
         "components": {
           "developer_demand": 0,
-          "demonstrable_value": 50,
-          "technical_readiness": 60,
+          "demonstrable_value": 100,
+          "technical_readiness": 100,
           "discoverability": 75,
           "maintenance_quality": 75
         },
@@ -420,7 +563,51 @@
             "formula": "min(100, 4*stars + 8*forks)",
             "limitation": "Sparse popularity proxy; underlying demand unknown."
           },
-          "verified_tests_and_demo": null,
+          "verified_tests_and_demo": {
+            "repository": "anistack72/web-audit-workbench",
+            "commit": "d8c177d640ca7982119113f9175ffcc7a206e250",
+            "tree": "b16dfa474ba36097b9968003003381b4892296a9",
+            "verified_at": "2026-11-21T19:48:04.734735+00:00",
+            "node": "v24.20.0",
+            "platform": "macOS arm64",
+            "results": [
+              {
+                "command": [
+                  "npm",
+                  "run",
+                  "check"
+                ],
+                "exit_code": 0,
+                "log": "web-audit-workbench-npm-run-check.log"
+              },
+              {
+                "command": [
+                  "npm",
+                  "test"
+                ],
+                "exit_code": 0,
+                "log": "web-audit-workbench-npm-test.log"
+              },
+              {
+                "command": [
+                  "node",
+                  "demo.mjs"
+                ],
+                "exit_code": 0,
+                "log": "web-audit-workbench-node-demo.mjs.log"
+              },
+              {
+                "command": [
+                  "node",
+                  "demo.mjs",
+                  "html"
+                ],
+                "exit_code": 0,
+                "log": "web-audit-workbench-node-demo.mjs-html.log"
+              }
+            ],
+            "passed": true
+          },
           "file_presence_checks": {
             "description": true,
             "topics": false,
@@ -489,7 +676,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "3b40ca89d3ad28c3da2d586180042c83482fdc9c",
+      "tree_sha": "e0abcf233a6f34faa67d70da564bc3baeab8f664",
+      "commit_sha": "812e878639ee79b349fb6a3099be94b51900ebe6",
       "forks": 0,
       "open_issues_and_prs": 1,
       "subscribers": null,
@@ -588,7 +776,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "1d92e1f51cf96cd73f5feef9e68e400d265a38ea",
+      "tree_sha": "7fad4a42693b0a8748ef0ff40a1cbef5a1c5598c",
+      "commit_sha": "1d92e1f51cf96cd73f5feef9e68e400d265a38ea",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -963,7 +1152,7 @@
   ],
   "achievements": {
     "Pull Shark": {
-      "observed_merged_prs": 0,
+      "observed_merged_prs": 2,
       "source": "https://github.com/search?q=author%3Aanistack72%20is%3Apr%20is%3Amerged&type=pullrequests",
       "caveat": "Public searchable PRs; usefulness, eligibility exclusions and award require verification.",
       "award_verified": false,
@@ -1015,9 +1204,9 @@
       "eligibility": "community-documented; GitHub controls current availability and awards"
     },
     "contribution_window": {
-      "startedAt": "2025-11-16T00:00:00Z",
-      "endedAt": "2026-11-22T23:59:59Z",
-      "totalPullRequestContributions": 1,
+      "startedAt": "2025-11-23T00:00:00Z",
+      "endedAt": "2026-11-23T23:59:59Z",
+      "totalPullRequestContributions": 4,
       "totalPullRequestReviewContributions": 0,
       "totalIssueContributions": 0
     },
@@ -1032,8 +1221,36 @@
     "verification": "Inspect https://github.com/anistack72?tab=achievements; API evidence does not confirm awards."
   },
   "analytics": {
-    "daily_observed_interval": null,
+    "daily_observed_interval": {
+      "followers_net": 0,
+      "repository_stars_net": {
+        "anistack72/ai-runtime-doctor": 0,
+        "anistack72/anistack72": 0,
+        "anistack72/asset-budget": 0,
+        "anistack72/engineering-playbook": 0,
+        "anistack72/mac-release-gate": 0,
+        "anistack72/security-report-kit": 0,
+        "anistack72/web-audit-workbench": 0
+      },
+      "from": "2026-11-22",
+      "to": "2026-11-23"
+    },
     "weekly_observed_interval": null,
+    "campaign_observed_interval": {
+      "followers_net": 0,
+      "repository_stars_net": {
+        "anistack72/ai-runtime-doctor": 0,
+        "anistack72/anistack72": 0,
+        "anistack72/asset-budget": 0,
+        "anistack72/engineering-playbook": 0,
+        "anistack72/mac-release-gate": 0,
+        "anistack72/security-report-kit": 0,
+        "anistack72/web-audit-workbench": 0
+      },
+      "from": "2026-11-22",
+      "to": "2026-11-23"
+    },
+    "campaign_baseline_note": "First actual stored observation; no data backfilled before deployment.",
     "weekly_status": "insufficient_history",
     "attribution": "unknown: GitHub does not expose which campaign caused a star or follow",
     "conversion_rate": null,
@@ -1042,10 +1259,18 @@
   "capabilities": {
     "discovery": true,
     "graphql": true,
+    "visible_badge_verification": true,
     "external_mutations": false,
     "release_publish": false
   },
-  "requests": 39,
+  "requests": 46,
+  "profile_verification": {
+    "status": "no_visible_badges_observed",
+    "url": "https://github.com/anistack72",
+    "checked_at": "2026-11-23T19:28:38.593895+00:00",
+    "badges": [],
+    "limitation": "Public UI only. Absence does not prove no award; private/hidden badges and UI changes remain unknown."
+  },
   "campaign": {
     "phase": "foundation",
     "start": "2026-11-21",
@@ -1063,27 +1288,9 @@
       {
         "kind": "engineering_recommendation",
         "repository": "anistack72/ai-runtime-doctor",
-        "check": "changelog",
-        "action": "Record user-visible changes for the next real release.",
-        "priority": 53.25,
-        "risk": "requires_scoped_implementation",
-        "status": "queued"
-      },
-      {
-        "kind": "engineering_recommendation",
-        "repository": "anistack72/ai-runtime-doctor",
         "check": "topics",
         "action": "Add only accurate technical topics from the implementation.",
-        "priority": 53.25,
-        "risk": "requires_scoped_implementation",
-        "status": "queued"
-      },
-      {
-        "kind": "engineering_recommendation",
-        "repository": "anistack72/asset-budget",
-        "check": "changelog",
-        "action": "Record user-visible changes for the next real release.",
-        "priority": 53.25,
+        "priority": 76.25,
         "risk": "requires_scoped_implementation",
         "status": "queued"
       },
@@ -1092,7 +1299,7 @@
         "repository": "anistack72/asset-budget",
         "check": "topics",
         "action": "Add only accurate technical topics from the implementation.",
-        "priority": 53.25,
+        "priority": 76.25,
         "risk": "requires_scoped_implementation",
         "status": "queued"
       }
@@ -1118,7 +1325,7 @@
       "Pull Shark": {
         "state": "UNKNOWN",
         "observed_evidence": {
-          "observed_merged_prs": 0,
+          "observed_merged_prs": 2,
           "source": "https://github.com/search?q=author%3Aanistack72%20is%3Apr%20is%3Amerged&type=pullrequests",
           "caveat": "Public searchable PRs; usefulness, eligibility exclusions and award require verification.",
           "award_verified": false,
