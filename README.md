@@ -131,6 +131,26 @@ The tools above are independent v0.1 releases. Their coverage, supported formats
 **Measure what matters.** Test behavior, performance and recovery paths.  
 **Verify the delivery.** Check the artifact users actually run.
 
+
+
+<br>
+
+## GitHub activity
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/anistack72/anistack72/profile-assets/dist/profile-metrics.svg" width="100%" alt="Verified GitHub followers and stars received">
+</p>
+
+<p align="center">
+  <a href="https://github.com/anistack72"><strong>🏆 GitHub achievements</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/anistack72?tab=followers"><strong>Followers</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/anistack72?tab=repositories"><strong>Starred projects</strong></a>
+</p>
+
+<sub>Figures update automatically from actual public GitHub data. Achievements are awarded by GitHub.</sub>
+
 <br>
 
 ---
