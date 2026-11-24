@@ -85,7 +85,9 @@ class NetworkGates(unittest.TestCase):
 
     def test_daily_budget_is_shared_across_restarts(self):
         rows = self.plan(); self.claim(rows[0])
+        self.finish(rows[0])
         self.claim(rows[1], NOW + dt.timedelta(seconds=61))
+        self.finish(rows[1], NOW + dt.timedelta(seconds=61))
         other = Journal(self.path)
         try:
             with self.assertRaises(NetworkError):
@@ -94,7 +96,13 @@ class NetworkGates(unittest.TestCase):
 
     def test_interval_prevents_burst_mutations(self):
         rows = self.plan(); self.claim(rows[0])
-        with self.assertRaises(NetworkError): self.claim(rows[1], NOW + dt.timedelta(seconds=59))
+        self.finish(rows[0], NOW + dt.timedelta(seconds=30))
+        with self.assertRaises(NetworkError): self.claim(rows[1], NOW + dt.timedelta(seconds=61))
+        self.claim(rows[1], NOW + dt.timedelta(seconds=91))
+
+    def test_inflight_action_blocks_even_after_interval_elapsed(self):
+        rows = self.plan(); self.claim(rows[0])
+        with self.assertRaises(NetworkError): self.claim(rows[1], NOW + dt.timedelta(hours=1))
 
     def test_same_claim_is_not_executed_twice(self):
         row = self.plan()[0]; self.claim(row)

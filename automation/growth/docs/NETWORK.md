@@ -6,7 +6,7 @@ This executor manages the account's following list. It does not acquire follower
 
 `network-policy.json` authorizes active contributors discovered in configured technical communities with matching interests and a relevance score of at least 45. A complete report no older than 36 hours is required. Public identities, graph completeness, account ownership, the campaign deadline and following capacity are checked before an action is reserved.
 
-The compiled ceilings are two follows and one unfollow per UTC day. The configured following ceiling is 30; mutations are at least 60 seconds apart. These are conservative engineering limits, not a GitHub-approved safe rate. Uncertain attempts consume the quota and reserve following capacity. Never retry a click after an uncertain result: inspect the resulting state and reconcile it first.
+The compiled ceilings are two follows and one unfollow per UTC day. The configured following ceiling is 30; mutations are at least 60 seconds apart, measured conservatively from the previous confirmation. An unresolved action blocks all new mutations. These are conservative engineering limits, not a GitHub-approved safe rate. Uncertain attempts consume the quota and reserve following capacity. Never retry a click after an uncertain result: inspect the resulting state and reconcile it first.
 
 Unfollows require exact usernames in the explicit `exclude` list. That list starts empty. Accounts in `protected` are retained; an overlap stops execution. Follower reciprocity and inactivity do not generate removals. Previously removed accounts are not automatically followed again. Update exclusions only when the user explicitly identifies accounts to remove; do not invent exclusions to manufacture churn.
 

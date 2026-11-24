@@ -166,7 +166,11 @@ class Journal:
                 WHERE verb=? AND substr(started_at,1,10)=?''', (row['verb'], today)).fetchone()[0]
             if used >= policy['daily_' + row['verb'] + '_limit']:
                 raise NetworkError('Daily action limit reached')
-            latest = self.db.execute('SELECT max(started_at) FROM network_actions').fetchone()[0]
+            if self.db.execute("SELECT 1 FROM network_actions WHERE state IN ('claimed','uncertain')").fetchone():
+                raise NetworkError('Reconcile the previous action before starting another mutation')
+            latest = self.db.execute('''SELECT max(moment) FROM
+                (SELECT started_at AS moment FROM network_actions
+                 UNION ALL SELECT finished_at AS moment FROM network_actions)''').fetchone()[0]
             if latest and (now - instant(latest)).total_seconds() < policy['minimum_interval_seconds']:
                 raise NetworkError('Mutation interval has not elapsed')
             self.db.execute("UPDATE network_actions SET state='claimed', started_at=? WHERE id=?",
