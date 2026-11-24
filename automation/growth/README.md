@@ -40,3 +40,7 @@ The demand component is explicitly a sparse stars/forks proxy, not measured deve
 Campaign attribution and visitor-to-star conversion remain **unknown**: public GitHub APIs do not provide causal attribution. Repository traffic requires additional administration-read permission; default collection does not request it. Badge verification reads the public profile without credentials and requires matching account links, GitHub badge attributes and official image origins. It records visible awards only; absent, hidden or unavailable badges remain unknown. This HTML adapter can require updates if GitHub changes its UI.
 
 See [operations](docs/OPERATIONS.md), [research](docs/RESEARCH.md) and [campaign](docs/CAMPAIGN.md).
+
+## Selective account following
+
+The separate [network executor](docs/NETWORK.md) is now installed for authorized, relevant follows and explicit policy exclusions. It uses a persistent SQLite action journal, fresh complete discovery reports, strict daily limits, reservation before mutation, and browser screenshots after confirmation. Its `network-policy.json` starts with an empty exclusion list and protects the two existing technical follows. The daily connected Codex agent executes the browser steps; the read-only analytics collector never receives account-following credentials. All other external interaction drafts retain their existing approval boundary.

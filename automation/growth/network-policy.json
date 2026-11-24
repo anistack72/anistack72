@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "account": "anistack72",
+  "campaign_end": "2026-12-21",
+  "daily_follow_limit": 2,
+  "daily_unfollow_limit": 1,
+  "minimum_interval_seconds": 60,
+  "following_cap": 30,
+  "minimum_score": 45,
+  "max_report_age_hours": 36,
+  "allowed_sources": ["ollama/ollama", "tauri-apps/tauri", "vitest-dev/vitest"],
+  "protected": ["mxyng", "jberg5"],
+  "exclude": []
+}
