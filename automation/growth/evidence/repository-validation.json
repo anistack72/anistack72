@@ -1,9 +1,9 @@
 [
   {
     "repository": "anistack72/ai-runtime-doctor",
-    "commit": "0016669c42e7ea4b9c34d39d9114fb3acc52a345",
-    "tree": "acec3d664c843026d98cf0d29bd2f4786d496fef",
-    "verified_at": "2026-11-22T23:46:48.693479+00:00",
+    "commit": "15571d54fc2e1f307a0052f66d6b8889ce719de7",
+    "tree": "8cf72d4a0e28dd8577e27e5f836ccccc6a16fe50",
+    "verified_at": "2026-11-24T01:12:49.941156+00:00",
     "node": "22 and 24",
     "platform": "CI: Linux, macOS, Windows",
     "results": [
@@ -26,8 +26,8 @@
       }
     ],
     "passed": true,
-    "validation_origin": "Successful PR CI; merged tree identical to tested tree",
-    "workflow_url": "https://github.com/anistack72/ai-runtime-doctor/actions/runs/45084776585"
+    "validation_origin": "Successful six-job main-branch matrix against this exact source SHA",
+    "workflow_url": "https://github.com/anistack72/ai-runtime-doctor/actions/runs/45266112912"
   },
   {
     "repository": "anistack72/web-audit-workbench",
@@ -76,9 +76,9 @@
   },
   {
     "repository": "anistack72/asset-budget",
-    "commit": "4d2059ae081430a8d10afbb8329a188499949662",
-    "tree": "892fb2bca9b09e889b33231ef14b7bcd2558091e",
-    "verified_at": "2026-11-22T23:46:48.693688+00:00",
+    "commit": "acbba0810d646cda356ed3ee3f2f8a27ba1353e1",
+    "tree": "ffd9ca7e0c77f964e97ccf80bdfbe8891a3ff09b",
+    "verified_at": "2026-11-24T01:12:49.941356+00:00",
     "node": "22 and 24",
     "platform": "CI: Linux, macOS, Windows",
     "results": [
@@ -101,8 +101,8 @@
       }
     ],
     "passed": true,
-    "validation_origin": "Successful PR CI; merged tree identical to tested tree",
-    "workflow_url": "https://github.com/anistack72/asset-budget/actions/runs/45084782943"
+    "validation_origin": "Successful six-job main-branch matrix against this exact source SHA; recovered cancelled runner through attempt 2",
+    "workflow_url": "https://github.com/anistack72/asset-budget/actions/runs/45266620157"
   },
   {
     "repository": "anistack72/mac-release-gate",
