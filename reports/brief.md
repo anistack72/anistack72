@@ -1,4 +1,4 @@
-# Growth intelligence — 2026-11-24
+# Growth intelligence — 2026-11-25
 
 Observed public data; no campaign or badge award attribution.
 
@@ -6,19 +6,18 @@ Observed public data; no campaign or badge award attribution.
 |---|---:|---:|
 | anistack72/ai-runtime-doctor | 70.0/100 | 0 |
 | anistack72/asset-budget | 70.0/100 | 0 |
-| anistack72/mac-release-gate | 63.75/100 | 0 |
-| anistack72/security-report-kit | 63.75/100 | 0 |
-| anistack72/web-audit-workbench | 63.75/100 | 0 |
+| anistack72/mac-release-gate | 66.25/100 | 0 |
+| anistack72/security-report-kit | 66.25/100 | 0 |
+| anistack72/web-audit-workbench | 66.25/100 | 0 |
 | anistack72/anistack72 | 30.5/100 | 0 |
 | anistack72/engineering-playbook | 27.75/100 | 0 |
 
 ## Useful next work
 
-Observed campaign interval: 2026-11-22 to 2026-11-24.
+Observed campaign interval: 2026-11-22 to 2026-11-25.
 Net follower change: 0. Genuine identity and causal attribution are unverified.
 
 - anistack72/mac-release-gate: Add only accurate technical topics from the implementation.
-- anistack72/mac-release-gate: Record user-visible changes for the next real release.
 
 ## Collaboration opportunities
 

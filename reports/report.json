@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "account": "anistack72",
-  "day": "2026-11-24",
-  "observed_at": "2026-11-24T01:14:09.519064+00:00",
+  "day": "2026-11-25",
+  "observed_at": "2026-11-25T18:10:07.001569+00:00",
   "status": "complete",
   "metrics": {
     "followers": 1,
-    "following": 2,
+    "following": 4,
     "stars_received_owned_active_public": 0
   },
   "relationships": {
@@ -14,8 +14,8 @@
     "new_followers": [],
     "lost_followers": [],
     "you_followed": [
-      "jberg5",
-      "mxyng"
+      "antfu",
+      "lucasfernog"
     ],
     "you_unfollowed": [],
     "mutual": [],
@@ -23,6 +23,8 @@
       "engrshuvodas"
     ],
     "following_only": [
+      "antfu",
+      "lucasfernog",
       "jberg5",
       "mxyng"
     ],
@@ -33,7 +35,7 @@
       "repository": "anistack72/ai-runtime-doctor",
       "url": "https://github.com/anistack72/ai-runtime-doctor",
       "stars": 0,
-      "language": "JavaScript",
+      "language": "Python",
       "topics": [
         "cli",
         "diagnostics",
@@ -62,8 +64,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "8cf72d4a0e28dd8577e27e5f836ccccc6a16fe50",
-      "commit_sha": "15571d54fc2e1f307a0052f66d6b8889ce719de7",
+      "tree_sha": "1d44d245f4f450c1a4c02a0b2221c2cd6a2d8b08",
+      "commit_sha": "04c4def1bd29fbc67de1bcc1d84328babd771b5e",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -95,9 +97,9 @@
           },
           "verified_tests_and_demo": {
             "repository": "anistack72/ai-runtime-doctor",
-            "commit": "15571d54fc2e1f307a0052f66d6b8889ce719de7",
-            "tree": "8cf72d4a0e28dd8577e27e5f836ccccc6a16fe50",
-            "verified_at": "2026-11-24T01:12:49.941156+00:00",
+            "commit": "04c4def1bd29fbc67de1bcc1d84328babd771b5e",
+            "tree": "1d44d245f4f450c1a4c02a0b2221c2cd6a2d8b08",
+            "verified_at": "2026-11-24T01:27:44.291542+00:00",
             "node": "22 and 24",
             "platform": "CI: Linux, macOS, Windows",
             "results": [
@@ -116,12 +118,12 @@
                 ],
                 "exit_code": 0,
                 "tests": 15,
-                "includes": "terminal/JSON/HTML fixture demo subprocesses"
+                "includes": "terminal/JSON/HTML fixture subprocess regressions"
               }
             ],
             "passed": true,
-            "validation_origin": "Successful six-job main-branch matrix against this exact source SHA",
-            "workflow_url": "https://github.com/anistack72/ai-runtime-doctor/actions/runs/45266112912"
+            "validation_origin": "Successful six-job main branch matrix against exact source SHA",
+            "workflow_url": "https://github.com/anistack72/ai-runtime-doctor/actions/runs/45304936664"
           },
           "file_presence_checks": {
             "description": true,
@@ -174,8 +176,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "ffd9ca7e0c77f964e97ccf80bdfbe8891a3ff09b",
-      "commit_sha": "acbba0810d646cda356ed3ee3f2f8a27ba1353e1",
+      "tree_sha": "b1233b6a9679634ead7de944355c58efe107524d",
+      "commit_sha": "48a3725e767430526b94a517196849cc50a7f7d4",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -207,9 +209,9 @@
           },
           "verified_tests_and_demo": {
             "repository": "anistack72/asset-budget",
-            "commit": "acbba0810d646cda356ed3ee3f2f8a27ba1353e1",
-            "tree": "ffd9ca7e0c77f964e97ccf80bdfbe8891a3ff09b",
-            "verified_at": "2026-11-24T01:12:49.941356+00:00",
+            "commit": "48a3725e767430526b94a517196849cc50a7f7d4",
+            "tree": "b1233b6a9679634ead7de944355c58efe107524d",
+            "verified_at": "2026-11-24T18:22:59.909Z",
             "node": "22 and 24",
             "platform": "CI: Linux, macOS, Windows",
             "results": [
@@ -227,13 +229,13 @@
                   "test"
                 ],
                 "exit_code": 0,
-                "tests": 11,
-                "includes": "terminal/JSON/HTML fixture demo subprocesses"
+                "tests": 12,
+                "includes": "Mixed-case extension regression and fixture demo subprocesses"
               }
             ],
             "passed": true,
-            "validation_origin": "Successful six-job main-branch matrix against this exact source SHA; recovered cancelled runner through attempt 2",
-            "workflow_url": "https://github.com/anistack72/asset-budget/actions/runs/45266620157"
+            "validation_origin": "Successful six-job main-branch matrix and published v0.1.1 regression reproduction",
+            "workflow_url": "https://github.com/anistack72/asset-budget/actions/runs/45458512892"
           },
           "file_presence_checks": {
             "description": true,
@@ -256,9 +258,9 @@
       "repository": "anistack72/mac-release-gate",
       "url": "https://github.com/anistack72/mac-release-gate",
       "stars": 0,
-      "language": "JavaScript",
+      "language": "Python",
       "topics": [],
-      "readiness_score": 82,
+      "readiness_score": 91,
       "checks": {
         "description": true,
         "topics": false,
@@ -270,16 +272,12 @@
         "ci_present": true,
         "security_policy": true,
         "contributing": true,
-        "changelog": false
+        "changelog": true
       },
       "recommendations": [
         {
           "check": "topics",
           "action": "Add only accurate technical topics from the implementation."
-        },
-        {
-          "check": "changelog",
-          "action": "Record user-visible changes for the next real release."
         }
       ],
       "tree_complete": true,
@@ -287,8 +285,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "90160f882cddd52ff101c5f620bca2d3a8e409e3",
-      "commit_sha": "8bd636ade193392f7b7315e70953b95eb468d3f5",
+      "tree_sha": "2bc8d216d44159240014a77553d6c4d6b1b31cba",
+      "commit_sha": "59d6aa498c5b823e2f98b73007fbfae147399496",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -296,7 +294,7 @@
       "default_branch": "main",
       "discussions_enabled": false,
       "opportunity": {
-        "score": 63.75,
+        "score": 66.25,
         "weights": {
           "developer_demand": 0.3,
           "demonstrable_value": 0.25,
@@ -309,7 +307,7 @@
           "demonstrable_value": 100,
           "technical_readiness": 100,
           "discoverability": 75,
-          "maintenance_quality": 75
+          "maintenance_quality": 100
         },
         "evidence": {
           "developer_demand": {
@@ -320,11 +318,11 @@
           },
           "verified_tests_and_demo": {
             "repository": "anistack72/mac-release-gate",
-            "commit": "8bd636ade193392f7b7315e70953b95eb468d3f5",
-            "tree": "90160f882cddd52ff101c5f620bca2d3a8e409e3",
-            "verified_at": "2026-11-21T19:48:05.391326+00:00",
-            "node": "v24.20.0",
-            "platform": "macOS arm64",
+            "commit": "59d6aa498c5b823e2f98b73007fbfae147399496",
+            "tree": "2bc8d216d44159240014a77553d6c4d6b1b31cba",
+            "verified_at": "2026-11-24T01:27:44.291795+00:00",
+            "node": "22 and 24",
+            "platform": "CI: Linux, macOS, Windows",
             "results": [
               {
                 "command": [
@@ -332,8 +330,7 @@
                   "run",
                   "check"
                 ],
-                "exit_code": 0,
-                "log": "mac-release-gate-npm-run-check.log"
+                "exit_code": 0
               },
               {
                 "command": [
@@ -341,27 +338,13 @@
                   "test"
                 ],
                 "exit_code": 0,
-                "log": "mac-release-gate-npm-test.log"
-              },
-              {
-                "command": [
-                  "node",
-                  "demo.mjs"
-                ],
-                "exit_code": 0,
-                "log": "mac-release-gate-node-demo.mjs.log"
-              },
-              {
-                "command": [
-                  "node",
-                  "demo.mjs",
-                  "html"
-                ],
-                "exit_code": 0,
-                "log": "mac-release-gate-node-demo.mjs-html.log"
+                "tests": 11,
+                "includes": "terminal/JSON/HTML fixture subprocess regressions"
               }
             ],
-            "passed": true
+            "passed": true,
+            "workflow_url": "https://github.com/anistack72/mac-release-gate/actions/runs/45305039284",
+            "validation_origin": "Successful six-job main branch matrix against exact source SHA"
           },
           "file_presence_checks": {
             "description": true,
@@ -374,7 +357,7 @@
             "ci_present": true,
             "security_policy": true,
             "contributing": true,
-            "changelog": false
+            "changelog": true
           },
           "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
         }
@@ -384,9 +367,9 @@
       "repository": "anistack72/security-report-kit",
       "url": "https://github.com/anistack72/security-report-kit",
       "stars": 0,
-      "language": "JavaScript",
+      "language": "Python",
       "topics": [],
-      "readiness_score": 82,
+      "readiness_score": 91,
       "checks": {
         "description": true,
         "topics": false,
@@ -398,16 +381,12 @@
         "ci_present": true,
         "security_policy": true,
         "contributing": true,
-        "changelog": false
+        "changelog": true
       },
       "recommendations": [
         {
           "check": "topics",
           "action": "Add only accurate technical topics from the implementation."
-        },
-        {
-          "check": "changelog",
-          "action": "Record user-visible changes for the next real release."
         }
       ],
       "tree_complete": true,
@@ -415,8 +394,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "84ec6ffeceb6040683d700687205738ed490c07c",
-      "commit_sha": "be39fb531f5e9a0c3489d1ef3c3a46b8325425d1",
+      "tree_sha": "5a2e7d1e99359b3e836aea457bcb75cbc3e443d8",
+      "commit_sha": "a1b120977f0159c45aa38050117a9561d98ed88d",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -424,7 +403,7 @@
       "default_branch": "main",
       "discussions_enabled": false,
       "opportunity": {
-        "score": 63.75,
+        "score": 66.25,
         "weights": {
           "developer_demand": 0.3,
           "demonstrable_value": 0.25,
@@ -437,7 +416,7 @@
           "demonstrable_value": 100,
           "technical_readiness": 100,
           "discoverability": 75,
-          "maintenance_quality": 75
+          "maintenance_quality": 100
         },
         "evidence": {
           "developer_demand": {
@@ -448,11 +427,11 @@
           },
           "verified_tests_and_demo": {
             "repository": "anistack72/security-report-kit",
-            "commit": "be39fb531f5e9a0c3489d1ef3c3a46b8325425d1",
-            "tree": "84ec6ffeceb6040683d700687205738ed490c07c",
-            "verified_at": "2026-11-21T19:48:05.519499+00:00",
-            "node": "v24.20.0",
-            "platform": "macOS arm64",
+            "commit": "a1b120977f0159c45aa38050117a9561d98ed88d",
+            "tree": "5a2e7d1e99359b3e836aea457bcb75cbc3e443d8",
+            "verified_at": "2026-11-24T01:27:44.291799+00:00",
+            "node": "22 and 24",
+            "platform": "CI: Linux, macOS, Windows",
             "results": [
               {
                 "command": [
@@ -460,8 +439,7 @@
                   "run",
                   "check"
                 ],
-                "exit_code": 0,
-                "log": "security-report-kit-npm-run-check.log"
+                "exit_code": 0
               },
               {
                 "command": [
@@ -469,27 +447,13 @@
                   "test"
                 ],
                 "exit_code": 0,
-                "log": "security-report-kit-npm-test.log"
-              },
-              {
-                "command": [
-                  "node",
-                  "demo.mjs"
-                ],
-                "exit_code": 0,
-                "log": "security-report-kit-node-demo.mjs.log"
-              },
-              {
-                "command": [
-                  "node",
-                  "demo.mjs",
-                  "html"
-                ],
-                "exit_code": 0,
-                "log": "security-report-kit-node-demo.mjs-html.log"
+                "tests": 13,
+                "includes": "terminal/JSON/HTML fixture subprocess regressions"
               }
             ],
-            "passed": true
+            "passed": true,
+            "workflow_url": "https://github.com/anistack72/security-report-kit/actions/runs/45305047148",
+            "validation_origin": "Successful six-job main branch matrix against exact source SHA"
           },
           "file_presence_checks": {
             "description": true,
@@ -502,7 +466,7 @@
             "ci_present": true,
             "security_policy": true,
             "contributing": true,
-            "changelog": false
+            "changelog": true
           },
           "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
         }
@@ -514,7 +478,7 @@
       "stars": 0,
       "language": "JavaScript",
       "topics": [],
-      "readiness_score": 82,
+      "readiness_score": 91,
       "checks": {
         "description": true,
         "topics": false,
@@ -526,16 +490,12 @@
         "ci_present": true,
         "security_policy": true,
         "contributing": true,
-        "changelog": false
+        "changelog": true
       },
       "recommendations": [
         {
           "check": "topics",
           "action": "Add only accurate technical topics from the implementation."
-        },
-        {
-          "check": "changelog",
-          "action": "Record user-visible changes for the next real release."
         }
       ],
       "tree_complete": true,
@@ -543,8 +503,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "b16dfa474ba36097b9968003003381b4892296a9",
-      "commit_sha": "d8c177d640ca7982119113f9175ffcc7a206e250",
+      "tree_sha": "1bae48fcc57185eba8572e244a39e5ea7098000f",
+      "commit_sha": "8b34fbf899032d675a57bec0562e28814dcf52e0",
       "forks": 0,
       "open_issues_and_prs": 0,
       "subscribers": null,
@@ -552,7 +512,7 @@
       "default_branch": "main",
       "discussions_enabled": false,
       "opportunity": {
-        "score": 63.75,
+        "score": 66.25,
         "weights": {
           "developer_demand": 0.3,
           "demonstrable_value": 0.25,
@@ -565,7 +525,7 @@
           "demonstrable_value": 100,
           "technical_readiness": 100,
           "discoverability": 75,
-          "maintenance_quality": 75
+          "maintenance_quality": 100
         },
         "evidence": {
           "developer_demand": {
@@ -576,11 +536,11 @@
           },
           "verified_tests_and_demo": {
             "repository": "anistack72/web-audit-workbench",
-            "commit": "d8c177d640ca7982119113f9175ffcc7a206e250",
-            "tree": "b16dfa474ba36097b9968003003381b4892296a9",
-            "verified_at": "2026-11-21T19:48:04.734735+00:00",
-            "node": "v24.20.0",
-            "platform": "macOS arm64",
+            "commit": "8b34fbf899032d675a57bec0562e28814dcf52e0",
+            "tree": "1bae48fcc57185eba8572e244a39e5ea7098000f",
+            "verified_at": "2026-11-24T01:27:44.291783+00:00",
+            "node": "22 and 24",
+            "platform": "CI: Linux, macOS, Windows",
             "results": [
               {
                 "command": [
@@ -588,8 +548,7 @@
                   "run",
                   "check"
                 ],
-                "exit_code": 0,
-                "log": "web-audit-workbench-npm-run-check.log"
+                "exit_code": 0
               },
               {
                 "command": [
@@ -597,27 +556,13 @@
                   "test"
                 ],
                 "exit_code": 0,
-                "log": "web-audit-workbench-npm-test.log"
-              },
-              {
-                "command": [
-                  "node",
-                  "demo.mjs"
-                ],
-                "exit_code": 0,
-                "log": "web-audit-workbench-node-demo.mjs.log"
-              },
-              {
-                "command": [
-                  "node",
-                  "demo.mjs",
-                  "html"
-                ],
-                "exit_code": 0,
-                "log": "web-audit-workbench-node-demo.mjs-html.log"
+                "tests": 15,
+                "includes": "terminal/JSON/HTML fixture subprocess regressions"
               }
             ],
-            "passed": true
+            "passed": true,
+            "workflow_url": "https://github.com/anistack72/web-audit-workbench/actions/runs/45305030394",
+            "validation_origin": "Successful six-job main branch matrix against exact source SHA"
           },
           "file_presence_checks": {
             "description": true,
@@ -630,7 +575,7 @@
             "ci_present": true,
             "security_policy": true,
             "contributing": true,
-            "changelog": false
+            "changelog": true
           },
           "limitations": "A file-presence check is not proof of execution. Validation applies only to the exact Git tree."
         }
@@ -687,8 +632,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "539e26b1b29b50d7aefb013a145454b259cfce72",
-      "commit_sha": "6816a89b0b4cdb960237c217b84f56d2bf006403",
+      "tree_sha": "23eb142201ad89197b023755f6e644c66ed739a1",
+      "commit_sha": "ee347d86bc552b89abc8c7b4f989c7024ffdba87",
       "forks": 0,
       "open_issues_and_prs": 1,
       "subscribers": null,
@@ -872,7 +817,7 @@
       "recent_public_repo_activity": true,
       "bot_signal": "no_explicit_signal",
       "quality_assessment": "heuristic; no identity or intent inference",
-      "already_following": false,
+      "already_following": true,
       "url": "https://github.com/antfu",
       "action": "review_collaboration",
       "approval": "required_for_external_interaction"
@@ -882,7 +827,7 @@
       "sources": [
         "tauri-apps/tauri"
       ],
-      "contributions": 2250,
+      "contributions": 2251,
       "id": "20051258",
       "score": 45,
       "matching_interests": [
@@ -891,7 +836,7 @@
       "recent_public_repo_activity": true,
       "bot_signal": "no_explicit_signal",
       "quality_assessment": "heuristic; no identity or intent inference",
-      "already_following": false,
+      "already_following": true,
       "url": "https://github.com/lucasfernog",
       "action": "review_collaboration",
       "approval": "required_for_external_interaction"
@@ -901,7 +846,7 @@
       "sources": [
         "vitest-dev/vitest"
       ],
-      "contributions": 2097,
+      "contributions": 2102,
       "id": "16173870",
       "score": 45,
       "matching_interests": [
@@ -920,7 +865,7 @@
       "sources": [
         "ollama/ollama"
       ],
-      "contributions": 1079,
+      "contributions": 1081,
       "id": "4033016",
       "score": 25,
       "matching_interests": [],
@@ -965,26 +910,6 @@
     }
   ],
   "queue": [
-    {
-      "operation": "follow_recommendation",
-      "target": "https://github.com/antfu",
-      "reason": [
-        "typescript"
-      ],
-      "approval": "pending",
-      "execute": false,
-      "id": "8ff7dd4680aa79dc12a8"
-    },
-    {
-      "operation": "follow_recommendation",
-      "target": "https://github.com/lucasfernog",
-      "reason": [
-        "typescript"
-      ],
-      "approval": "pending",
-      "execute": false,
-      "id": "5bb63d52a65cf5d3ba10"
-    },
     {
       "operation": "follow_recommendation",
       "target": "https://github.com/sheremet-va",
@@ -1152,7 +1077,7 @@
   ],
   "achievements": {
     "Pull Shark": {
-      "observed_merged_prs": 2,
+      "observed_merged_prs": 6,
       "source": "https://github.com/search?q=author%3Aanistack72%20is%3Apr%20is%3Amerged&type=pullrequests",
       "caveat": "Public searchable PRs; usefulness, eligibility exclusions and award require verification.",
       "award_verified": false,
@@ -1205,8 +1130,8 @@
     },
     "contribution_window": {
       "startedAt": "2025-11-23T00:00:00Z",
-      "endedAt": "2026-11-24T23:59:59Z",
-      "totalPullRequestContributions": 4,
+      "endedAt": "2026-11-25T23:59:59Z",
+      "totalPullRequestContributions": 8,
       "totalPullRequestReviewContributions": 0,
       "totalIssueContributions": 0
     },
@@ -1232,8 +1157,8 @@
         "anistack72/security-report-kit": 0,
         "anistack72/web-audit-workbench": 0
       },
-      "from": "2026-11-23",
-      "to": "2026-11-24"
+      "from": "2026-11-24",
+      "to": "2026-11-25"
     },
     "weekly_observed_interval": null,
     "campaign_observed_interval": {
@@ -1248,7 +1173,7 @@
         "anistack72/web-audit-workbench": 0
       },
       "from": "2026-11-22",
-      "to": "2026-11-24"
+      "to": "2026-11-25"
     },
     "campaign_baseline_note": "First actual stored observation; no data backfilled before deployment.",
     "weekly_status": "insufficient_history",
@@ -1267,7 +1192,7 @@
   "profile_verification": {
     "status": "no_visible_badges_observed",
     "url": "https://github.com/anistack72",
-    "checked_at": "2026-11-24T01:14:09.100833+00:00",
+    "checked_at": "2026-11-25T18:10:06.665591+00:00",
     "badges": [],
     "limitation": "Public UI only. Absence does not prove no award; private/hidden badges and UI changes remain unknown."
   },
@@ -1306,7 +1231,7 @@
       "Pull Shark": {
         "state": "UNKNOWN",
         "observed_evidence": {
-          "observed_merged_prs": 2,
+          "observed_merged_prs": 6,
           "source": "https://github.com/search?q=author%3Aanistack72%20is%3Apr%20is%3Amerged&type=pullrequests",
           "caveat": "Public searchable PRs; usefulness, eligibility exclusions and award require verification.",
           "award_verified": false,
