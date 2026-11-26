@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
   "account": "anistack72",
-  "day": "2026-11-25",
-  "observed_at": "2026-11-25T18:10:07.001569+00:00",
+  "day": "2026-11-26",
+  "observed_at": "2026-11-26T17:53:16.211493+00:00",
   "status": "complete",
   "metrics": {
-    "followers": 1,
+    "followers": 2,
     "following": 4,
     "stars_received_owned_active_public": 0
   },
   "relationships": {
     "baseline": false,
-    "new_followers": [],
-    "lost_followers": [],
-    "you_followed": [
-      "antfu",
-      "lucasfernog"
+    "new_followers": [
+      "BEPb"
     ],
+    "lost_followers": [],
+    "you_followed": [],
     "you_unfollowed": [],
     "mutual": [],
     "followers_only": [
-      "engrshuvodas"
+      "engrshuvodas",
+      "BEPb"
     ],
     "following_only": [
       "antfu",
@@ -827,7 +827,7 @@
       "sources": [
         "tauri-apps/tauri"
       ],
-      "contributions": 2251,
+      "contributions": 2256,
       "id": "20051258",
       "score": 45,
       "matching_interests": [
@@ -1130,7 +1130,7 @@
     },
     "contribution_window": {
       "startedAt": "2025-11-23T00:00:00Z",
-      "endedAt": "2026-11-25T23:59:59Z",
+      "endedAt": "2026-11-26T23:59:59Z",
       "totalPullRequestContributions": 8,
       "totalPullRequestReviewContributions": 0,
       "totalIssueContributions": 0
@@ -1147,7 +1147,7 @@
   },
   "analytics": {
     "daily_observed_interval": {
-      "followers_net": 0,
+      "followers_net": 1,
       "repository_stars_net": {
         "anistack72/ai-runtime-doctor": 0,
         "anistack72/anistack72": 0,
@@ -1157,12 +1157,12 @@
         "anistack72/security-report-kit": 0,
         "anistack72/web-audit-workbench": 0
       },
-      "from": "2026-11-24",
-      "to": "2026-11-25"
+      "from": "2026-11-25",
+      "to": "2026-11-26"
     },
     "weekly_observed_interval": null,
     "campaign_observed_interval": {
-      "followers_net": 0,
+      "followers_net": 1,
       "repository_stars_net": {
         "anistack72/ai-runtime-doctor": 0,
         "anistack72/anistack72": 0,
@@ -1173,7 +1173,7 @@
         "anistack72/web-audit-workbench": 0
       },
       "from": "2026-11-22",
-      "to": "2026-11-25"
+      "to": "2026-11-26"
     },
     "campaign_baseline_note": "First actual stored observation; no data backfilled before deployment.",
     "weekly_status": "insufficient_history",
@@ -1192,7 +1192,7 @@
   "profile_verification": {
     "status": "no_visible_badges_observed",
     "url": "https://github.com/anistack72",
-    "checked_at": "2026-11-25T18:10:06.665591+00:00",
+    "checked_at": "2026-11-26T17:53:15.788473+00:00",
     "badges": [],
     "limitation": "Public UI only. Absence does not prove no award; private/hidden badges and UI changes remain unknown."
   },
