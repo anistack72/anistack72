@@ -1,7 +1,7 @@
-"""Bounded account-following queue; external writes are performed by the UI executor.
+"""Bounded account-following queue; external writes are performed by the selected executor.
 
 This module never reads a token or makes a network request. A claim must precede
-each UI action; uncertain writes consume their slot until observed, never replayed.
+each external action; uncertain writes consume their slot until observed, never replayed.
 """
 import argparse
 import datetime as dt
@@ -35,8 +35,8 @@ def login(value):
 def policy_check(policy):
     if policy.get('account') != 'anistack72' or policy.get('schema_version') != 1:
         raise NetworkError('Policy is not authorized for this account')
-    for key, maximum in [('daily_follow_limit', 2), ('daily_unfollow_limit', 1),
-                         ('following_cap', 50), ('max_report_age_hours', 36)]:
+    for key, maximum in [('daily_follow_limit', 10), ('daily_unfollow_limit', 5),
+                         ('following_cap', 500), ('max_report_age_hours', 36)]:
         value = policy.get(key)
         if type(value) is not int or not 1 <= value <= maximum:
             raise NetworkError('Policy exceeds a hard execution bound')
@@ -93,14 +93,14 @@ class Journal:
         self._check(report, policy, now)
         protected = {login(x) for x in policy['protected']}
         excluded = {login(x) for x in policy['exclude']}
-        graph = report['relationships']
-        following = {login(x) for x in graph['following_only'] + graph['mutual']}
+        graph = report.get('relationships', {})
+        following = {login(x) for x in report.get('following', graph.get('following_only', []) + graph.get('mutual', []))}
         if len(following) != report['metrics']['following']:
             raise NetworkError('Following graph is incomplete; do not infer account state')
         rows = list(self.db.execute('SELECT * FROM network_actions'))
         # Incorporate confirmed UI changes newer than the daily analytics checkpoint.
         for row in sorted(rows, key=lambda x: x['finished_at'] or ''):
-            if row['result'] in ('changed', 'unchanged') and row['finished_at'] and (
+            if row['result'] in ('changed', 'unchanged', 'reconciled') and row['finished_at'] and (
                     instant(row['finished_at']) > instant(report['observed_at'])):
                 if row['observed'] == 'following':
                     following.add(row['login'])
@@ -152,7 +152,7 @@ class Journal:
         return {'account': policy['account'], 'status': 'planned', 'actions': actions,
                 'in_flight': in_flight, 'limits': {'follow': policy['daily_follow_limit'],
                 'unfollow': policy['daily_unfollow_limit']},
-                'executor': 'Connected GitHub browser session; no external writes performed by planner'}
+                'executor': policy.get('executor_backend', 'browser') + '; no external writes performed by planner'}
 
     def claim(self, identity, report, policy, now):
         self.db.execute('BEGIN IMMEDIATE')
@@ -227,6 +227,8 @@ def main():
         now = dt.datetime.now(UTC)
         if args.command in ('plan', 'claim'):
             report = json.loads(Path(args.report).read_text()); policy = json.loads(Path(args.policy).read_text())
+            if args.command == 'claim' and policy.get('executor_backend', '').startswith('api'):
+                raise NetworkError('Browser execution disabled; the API backend owns the journal')
             result = journal.plan(report, policy, now) if args.command == 'plan' else journal.claim(args.id, report, policy, now)
         elif args.command == 'finish':
             result = journal.finish(args.id, args.observed, args.result, args.proof, args.source, now)

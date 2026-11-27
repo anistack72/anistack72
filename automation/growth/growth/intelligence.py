@@ -101,8 +101,11 @@ def repository_audit(api, repo):
 
 def discover(api, config, following):
     candidates, opportunities = {}, []
+    sample_size = config.get('contributor_sample_size', 30)
+    if type(sample_size) is not int or not 10 <= sample_size <= 100:
+        raise ValueError('Contributor sample size must be between 10 and 100')
     for seed in config['discovery_seeds']:
-        contributors = api.get('/repos/' + seed + '/contributors?per_page=10')
+        contributors = api.get('/repos/' + seed + '/contributors?per_page=' + str(sample_size))
         if not isinstance(contributors, list):
             api.risk.trip('Unexpected contributors schema')
         for user in contributors:
@@ -120,7 +123,7 @@ def discover(api, config, following):
                 opportunities.append({'url': issue['html_url'], 'title': issue['title'],
                                       'repository': seed, 'action': 'Reproduce, read contribution rules, then assess a useful fix.'})
     followed = {str(user['id']) for user in following}
-    ranked = sorted(candidates.items(), key=lambda row: (-len(row[1]['sources']), -row[1]['contributions'], row[0]))
+    ranked = sorted(candidates.items(), key=lambda row: (row[0] in followed, -len(row[1]['sources']), -row[1]['contributions'], row[0]))
     results = []
     interests = {x.lower() for x in config['interests']}
     for identity, candidate in ranked[:config['max_candidates']]:
@@ -141,6 +144,9 @@ def discover(api, config, following):
                         'bot_signal': 'explicit_bot' if bot else 'no_explicit_signal',
                         'quality_assessment': 'heuristic; no identity or intent inference',
                         'already_following': identity in followed,
+                        'audience_followers': user.get('followers'),
+                        'follow_back_probability': None,
+                        'audience_note': 'Observed audience only; no reciprocity or causal growth prediction.',
                         'url': user['html_url'], 'action': 'review_collaboration',
                         'approval': 'required_for_external_interaction'})
     return sorted(results, key=lambda x: (-x['score'], x['login'])), opportunities

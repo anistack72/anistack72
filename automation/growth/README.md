@@ -44,3 +44,7 @@ See [operations](docs/OPERATIONS.md), [research](docs/RESEARCH.md) and [campaign
 ## Selective account following
 
 The separate [network executor](docs/NETWORK.md) is now installed for authorized, relevant follows and explicit policy exclusions. It uses a persistent SQLite action journal, fresh complete discovery reports, strict daily limits, reservation before mutation, and browser screenshots after confirmation. Its `network-policy.json` starts with an empty exclusion list and protects the two existing technical follows. The daily connected Codex agent executes the browser steps; the read-only analytics collector never receives account-following credentials. All other external interaction drafts retain their existing approval boundary.
+
+## Hosted API execution
+
+The [hosted network executor](docs/NETWORK-API.md) replaces the browser dependency for account-following operations. Its default policy allows up to five relevant follows per UTC day, with a configurable ceiling and a separate explicit-exclusion unfollow budget. The `Account network API` workflow requires the narrowly scoped `FOLLOWER_TOKEN` Actions secret before it can perform account writes. Durable reservations are committed before mutations and verified afterward. Missing credentials mean **pending activation**, not a functioning account executor. The Codex maintenance automation monitors this workflow and does not duplicate its writes through the browser.

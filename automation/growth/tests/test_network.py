@@ -16,6 +16,7 @@ class NetworkGates(unittest.TestCase):
         self.path = Path(self.temp.name) / 'network.sqlite3'
         self.journal = Journal(self.path)
         self.policy = json.loads((Path(__file__).resolve().parents[1] / 'network-policy.json').read_text())
+        self.policy['daily_follow_limit'] = 2
         self.report = {'account': 'anistack72', 'status': 'complete',
             'observed_at': NOW.isoformat(), 'metrics': {'following': 2},
             'relationships': {'following_only': ['mxyng', 'jberg5'], 'mutual': []},

@@ -1,5 +1,7 @@
 # Selective following executor
 
+**Current backend:** the hosted [REST executor](NETWORK-API.md) is selected by policy. The browser procedure below is retained as a historical fallback and is disabled in the CLI while the API backend is selected. Its initial two actions remain in the migrated journal; there is no quota reset. The hosted workflow still needs its account credential before activation.
+
 This executor manages the account's following list. It does not acquire followers or stars on command. It uses the existing signed-in GitHub browser through the daily Codex automation. The analytics collector and its read-only repository token remain separate.
 
 ## Policy and execution
