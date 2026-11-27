@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "actions": [
+    {
+      "id": "22f475e6ebe3f4854c66ea06",
+      "verb": "follow",
+      "login": "antfu",
+      "state": "confirmed",
+      "planned_at": "2026-11-24T18:48:58.544382+00:00",
+      "started_at": "2026-11-24T18:49:22.904129+00:00",
+      "finished_at": "2026-11-24T18:49:48.584693+00:00",
+      "observed": "following",
+      "result": "changed",
+      "proof": "local_screenshot_digest:3d190dcee7719962685af9f2b19978c0628a098bab35a9bfbadfafd6594f6f9b",
+      "proof_sha256": "3d190dcee7719962685af9f2b19978c0628a098bab35a9bfbadfafd6594f6f9b",
+      "source": "https://github.com/antfu",
+      "reason": "Relevant active contributor: vitest-dev/vitest"
+    },
+    {
+      "id": "5fe55aa7be9ad6a4c1165163",
+      "verb": "follow",
+      "login": "lucasfernog",
+      "state": "confirmed",
+      "planned_at": "2026-11-24T18:48:58.544382+00:00",
+      "started_at": "2026-11-24T18:51:00.003800+00:00",
+      "finished_at": "2026-11-24T18:51:14.630811+00:00",
+      "observed": "following",
+      "result": "changed",
+      "proof": "local_screenshot_digest:4b4a44f2039587f91e178b7789df5e17812c9d8e9ebb8b55276cc4bf697917f8",
+      "proof_sha256": "4b4a44f2039587f91e178b7789df5e17812c9d8e9ebb8b55276cc4bf697917f8",
+      "source": "https://github.com/lucasfernog",
+      "reason": "Relevant active contributor: tauri-apps/tauri"
+    },
+    {
+      "id": "c8b500b389095049d4de9d52",
+      "verb": "follow",
+      "login": "sheremet-va",
+      "state": "planned",
+      "planned_at": "2026-11-24T18:48:58.544382+00:00",
+      "started_at": null,
+      "finished_at": null,
+      "observed": null,
+      "result": null,
+      "proof": null,
+      "proof_sha256": null,
+      "source": null,
+      "reason": "Relevant active contributor: vitest-dev/vitest"
+    }
+  ],
+  "control": []
+}
