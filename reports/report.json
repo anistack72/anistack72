@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "account": "anistack72",
-  "day": "2026-11-26",
-  "observed_at": "2026-11-26T17:53:16.211493+00:00",
+  "day": "2026-11-27",
+  "observed_at": "2026-11-27T17:38:36.738574+00:00",
   "status": "complete",
   "metrics": {
     "followers": 2,
@@ -11,9 +11,7 @@
   },
   "relationships": {
     "baseline": false,
-    "new_followers": [
-      "BEPb"
-    ],
+    "new_followers": [],
     "lost_followers": [],
     "you_followed": [],
     "you_unfollowed": [],
@@ -846,7 +844,7 @@
       "sources": [
         "vitest-dev/vitest"
       ],
-      "contributions": 2102,
+      "contributions": 2103,
       "id": "16173870",
       "score": 45,
       "matching_interests": [
@@ -1080,8 +1078,21 @@
       "observed_merged_prs": 6,
       "source": "https://github.com/search?q=author%3Aanistack72%20is%3Apr%20is%3Amerged&type=pullrequests",
       "caveat": "Public searchable PRs; usefulness, eligibility exclusions and award require verification.",
-      "award_verified": false,
-      "eligibility": "community-documented; GitHub controls current availability and awards"
+      "award_verified": true,
+      "eligibility": "community-documented; GitHub controls current availability and awards",
+      "visible_award_evidence": {
+        "name": "Pull Shark",
+        "slug": "pull-shark",
+        "github_award_url": "https://github.com/anistack72?achievement=pull-shark&tab=achievements",
+        "captured_evidence": {
+          "alt": "Achievement: Pull Shark",
+          "image_url": "https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png",
+          "hovercard_path": "/users/anistack72/achievements/pull-shark/detail?hovercard=1",
+          "selector": "img.achievement-badge-sidebar"
+        },
+        "authority": "Badge actually rendered on GitHub public profile; tier not inferred.",
+        "checked_at": "2026-11-27T17:38:36.253862+00:00"
+      }
     },
     "Starstruck": {
       "max_observed_repo_stars": 0,
@@ -1130,7 +1141,7 @@
     },
     "contribution_window": {
       "startedAt": "2025-11-23T00:00:00Z",
-      "endedAt": "2026-11-26T23:59:59Z",
+      "endedAt": "2026-11-27T23:59:59Z",
       "totalPullRequestContributions": 8,
       "totalPullRequestReviewContributions": 0,
       "totalIssueContributions": 0
@@ -1147,7 +1158,7 @@
   },
   "analytics": {
     "daily_observed_interval": {
-      "followers_net": 1,
+      "followers_net": 0,
       "repository_stars_net": {
         "anistack72/ai-runtime-doctor": 0,
         "anistack72/anistack72": 0,
@@ -1157,8 +1168,8 @@
         "anistack72/security-report-kit": 0,
         "anistack72/web-audit-workbench": 0
       },
-      "from": "2026-11-25",
-      "to": "2026-11-26"
+      "from": "2026-11-26",
+      "to": "2026-11-27"
     },
     "weekly_observed_interval": null,
     "campaign_observed_interval": {
@@ -1173,7 +1184,7 @@
         "anistack72/web-audit-workbench": 0
       },
       "from": "2026-11-22",
-      "to": "2026-11-26"
+      "to": "2026-11-27"
     },
     "campaign_baseline_note": "First actual stored observation; no data backfilled before deployment.",
     "weekly_status": "insufficient_history",
@@ -1190,10 +1201,23 @@
   },
   "requests": 46,
   "profile_verification": {
-    "status": "no_visible_badges_observed",
+    "status": "visible_badges_observed",
     "url": "https://github.com/anistack72",
-    "checked_at": "2026-11-26T17:53:15.788473+00:00",
-    "badges": [],
+    "checked_at": "2026-11-27T17:38:36.253862+00:00",
+    "badges": [
+      {
+        "name": "Pull Shark",
+        "slug": "pull-shark",
+        "github_award_url": "https://github.com/anistack72?achievement=pull-shark&tab=achievements",
+        "captured_evidence": {
+          "alt": "Achievement: Pull Shark",
+          "image_url": "https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png",
+          "hovercard_path": "/users/anistack72/achievements/pull-shark/detail?hovercard=1",
+          "selector": "img.achievement-badge-sidebar"
+        },
+        "authority": "Badge actually rendered on GitHub public profile; tier not inferred."
+      }
+    ],
     "limitation": "Public UI only. Absence does not prove no award; private/hidden badges and UI changes remain unknown."
   },
   "campaign": {
@@ -1229,15 +1253,28 @@
     ],
     "achievements": {
       "Pull Shark": {
-        "state": "UNKNOWN",
+        "state": "GITHUB_VERIFIED",
         "observed_evidence": {
           "observed_merged_prs": 6,
           "source": "https://github.com/search?q=author%3Aanistack72%20is%3Apr%20is%3Amerged&type=pullrequests",
           "caveat": "Public searchable PRs; usefulness, eligibility exclusions and award require verification.",
-          "award_verified": false,
-          "eligibility": "community-documented; GitHub controls current availability and awards"
+          "award_verified": true,
+          "eligibility": "community-documented; GitHub controls current availability and awards",
+          "visible_award_evidence": {
+            "name": "Pull Shark",
+            "slug": "pull-shark",
+            "github_award_url": "https://github.com/anistack72?achievement=pull-shark&tab=achievements",
+            "captured_evidence": {
+              "alt": "Achievement: Pull Shark",
+              "image_url": "https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png",
+              "hovercard_path": "/users/anistack72/achievements/pull-shark/detail?hovercard=1",
+              "selector": "img.achievement-badge-sidebar"
+            },
+            "authority": "Badge actually rendered on GitHub public profile; tier not inferred.",
+            "checked_at": "2026-11-27T17:38:36.253862+00:00"
+          }
         },
-        "blocked_transition": "Needs current requirement verification and authoritative award evidence."
+        "blocked_transition": null
       },
       "Quickdraw": {
         "state": "UNKNOWN",
