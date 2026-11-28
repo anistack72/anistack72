@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "account": "anistack72",
-  "day": "2026-11-27",
-  "observed_at": "2026-11-27T17:38:36.738574+00:00",
+  "day": "2026-11-28",
+  "observed_at": "2026-11-28T16:22:55.818142+00:00",
   "status": "complete",
   "metrics": {
     "followers": 2,
@@ -630,8 +630,8 @@
       "release_gate": "File presence only. Clean-checkout tests, demo, CI and tag verification are required before publishing.",
       "demand": "unknown; stars and documentation do not establish developer demand",
       "differentiation": "requires human assessment",
-      "tree_sha": "23eb142201ad89197b023755f6e644c66ed739a1",
-      "commit_sha": "ee347d86bc552b89abc8c7b4f989c7024ffdba87",
+      "tree_sha": "8f7d85f6216f464acc8cc309f789fdb5723f30f9",
+      "commit_sha": "7d1462510dbc7797092d29b3cb28af473440034b",
       "forks": 0,
       "open_issues_and_prs": 1,
       "subscribers": null,
@@ -782,60 +782,163 @@
   ],
   "candidates": [
     {
-      "login": "mxyng",
-      "sources": [
-        "ollama/ollama"
-      ],
-      "contributions": 1294,
-      "id": "2372640",
-      "score": 65,
-      "matching_interests": [
-        "ollama",
-        "python"
-      ],
-      "recent_public_repo_activity": true,
-      "bot_signal": "no_explicit_signal",
-      "quality_assessment": "heuristic; no identity or intent inference",
-      "already_following": true,
-      "url": "https://github.com/mxyng",
-      "action": "review_collaboration",
-      "approval": "required_for_external_interaction"
-    },
-    {
-      "login": "antfu",
-      "sources": [
-        "vitest-dev/vitest"
-      ],
-      "contributions": 1093,
-      "id": "11247099",
-      "score": 45,
-      "matching_interests": [
-        "typescript"
-      ],
-      "recent_public_repo_activity": true,
-      "bot_signal": "no_explicit_signal",
-      "quality_assessment": "heuristic; no identity or intent inference",
-      "already_following": true,
-      "url": "https://github.com/antfu",
-      "action": "review_collaboration",
-      "approval": "required_for_external_interaction"
-    },
-    {
-      "login": "lucasfernog",
+      "login": "FabianLars",
       "sources": [
         "tauri-apps/tauri"
       ],
-      "contributions": 2256,
-      "id": "20051258",
-      "score": 45,
+      "contributions": 285,
+      "id": "30730186",
+      "score": 85,
       "matching_interests": [
+        "rust",
+        "tauri",
         "typescript"
       ],
       "recent_public_repo_activity": true,
       "bot_signal": "no_explicit_signal",
       "quality_assessment": "heuristic; no identity or intent inference",
-      "already_following": true,
-      "url": "https://github.com/lucasfernog",
+      "already_following": false,
+      "audience_followers": 377,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/FabianLars",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "AriPerkkio",
+      "sources": [
+        "vitest-dev/vitest"
+      ],
+      "contributions": 405,
+      "id": "14806298",
+      "score": 65,
+      "matching_interests": [
+        "javascript",
+        "typescript"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "audience_followers": 257,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/AriPerkkio",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "BruceMacD",
+      "sources": [
+        "ollama/ollama"
+      ],
+      "contributions": 364,
+      "id": "5853428",
+      "score": 65,
+      "matching_interests": [
+        "rust",
+        "typescript"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "audience_followers": 597,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/BruceMacD",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "Legend-Master",
+      "sources": [
+        "tauri-apps/tauri"
+      ],
+      "contributions": 304,
+      "id": "68118705",
+      "score": 65,
+      "matching_interests": [
+        "rust",
+        "typescript"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "audience_followers": 66,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/Legend-Master",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "ParthSareen",
+      "sources": [
+        "ollama/ollama"
+      ],
+      "contributions": 253,
+      "id": "29360864",
+      "score": 65,
+      "matching_interests": [
+        "ollama",
+        "typescript"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "audience_followers": 378,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/ParthSareen",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "hi-ogawa",
+      "sources": [
+        "vitest-dev/vitest"
+      ],
+      "contributions": 604,
+      "id": "4232207",
+      "score": 65,
+      "matching_interests": [
+        "javascript",
+        "typescript"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "audience_followers": 487,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/hi-ogawa",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "amrbashir",
+      "sources": [
+        "tauri-apps/tauri"
+      ],
+      "contributions": 592,
+      "id": "48618675",
+      "score": 45,
+      "matching_interests": [
+        "rust"
+      ],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "audience_followers": 536,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/amrbashir",
       "action": "review_collaboration",
       "approval": "required_for_external_interaction"
     },
@@ -854,6 +957,9 @@
       "bot_signal": "no_explicit_signal",
       "quality_assessment": "heuristic; no identity or intent inference",
       "already_following": false,
+      "audience_followers": 757,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
       "url": "https://github.com/sheremet-va",
       "action": "review_collaboration",
       "approval": "required_for_external_interaction"
@@ -871,7 +977,50 @@
       "bot_signal": "no_explicit_signal",
       "quality_assessment": "heuristic; no identity or intent inference",
       "already_following": false,
+      "audience_followers": 394,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
       "url": "https://github.com/dhiltgen",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "pdevine",
+      "sources": [
+        "ollama/ollama"
+      ],
+      "contributions": 230,
+      "id": "75239",
+      "score": 25,
+      "matching_interests": [],
+      "recent_public_repo_activity": true,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "audience_followers": 202,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/pdevine",
+      "action": "review_collaboration",
+      "approval": "required_for_external_interaction"
+    },
+    {
+      "login": "jessegross",
+      "sources": [
+        "ollama/ollama"
+      ],
+      "contributions": 315,
+      "id": "6468499",
+      "score": 10,
+      "matching_interests": [],
+      "recent_public_repo_activity": false,
+      "bot_signal": "no_explicit_signal",
+      "quality_assessment": "heuristic; no identity or intent inference",
+      "already_following": false,
+      "audience_followers": 119,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
+      "url": "https://github.com/jessegross",
       "action": "review_collaboration",
       "approval": "required_for_external_interaction"
     },
@@ -888,6 +1037,9 @@
       "bot_signal": "no_explicit_signal",
       "quality_assessment": "heuristic; no identity or intent inference",
       "already_following": false,
+      "audience_followers": 2903,
+      "follow_back_probability": null,
+      "audience_note": "Observed audience only; no reciprocity or causal growth prediction.",
       "url": "https://github.com/jmorganca",
       "action": "review_collaboration",
       "approval": "required_for_external_interaction"
@@ -908,6 +1060,83 @@
     }
   ],
   "queue": [
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/FabianLars",
+      "reason": [
+        "rust",
+        "tauri",
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "671573b667d43049469e"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/AriPerkkio",
+      "reason": [
+        "javascript",
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "d9cdf3f2b6f228b4d67c"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/BruceMacD",
+      "reason": [
+        "rust",
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "3fb312f696d46761f98a"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/Legend-Master",
+      "reason": [
+        "rust",
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "5630ae8dfb886cc9c306"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/ParthSareen",
+      "reason": [
+        "ollama",
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "f9e61b7d7428d91c9879"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/hi-ogawa",
+      "reason": [
+        "javascript",
+        "typescript"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "9052fd0a951221bd7e16"
+    },
+    {
+      "operation": "follow_recommendation",
+      "target": "https://github.com/amrbashir",
+      "reason": [
+        "rust"
+      ],
+      "approval": "pending",
+      "execute": false,
+      "id": "b33f43b0fb446e96f820"
+    },
     {
       "operation": "follow_recommendation",
       "target": "https://github.com/sheremet-va",
@@ -1091,7 +1320,7 @@
           "selector": "img.achievement-badge-sidebar"
         },
         "authority": "Badge actually rendered on GitHub public profile; tier not inferred.",
-        "checked_at": "2026-11-27T17:38:36.253862+00:00"
+        "checked_at": "2026-11-28T16:22:55.479466+00:00"
       }
     },
     "Starstruck": {
@@ -1141,7 +1370,7 @@
     },
     "contribution_window": {
       "startedAt": "2025-11-23T00:00:00Z",
-      "endedAt": "2026-11-27T23:59:59Z",
+      "endedAt": "2026-11-28T23:59:59Z",
       "totalPullRequestContributions": 8,
       "totalPullRequestReviewContributions": 0,
       "totalIssueContributions": 0
@@ -1168,8 +1397,8 @@
         "anistack72/security-report-kit": 0,
         "anistack72/web-audit-workbench": 0
       },
-      "from": "2026-11-26",
-      "to": "2026-11-27"
+      "from": "2026-11-27",
+      "to": "2026-11-28"
     },
     "weekly_observed_interval": null,
     "campaign_observed_interval": {
@@ -1184,7 +1413,7 @@
         "anistack72/web-audit-workbench": 0
       },
       "from": "2026-11-22",
-      "to": "2026-11-27"
+      "to": "2026-11-28"
     },
     "campaign_baseline_note": "First actual stored observation; no data backfilled before deployment.",
     "weekly_status": "insufficient_history",
@@ -1199,11 +1428,11 @@
     "external_mutations": false,
     "release_publish": false
   },
-  "requests": 46,
+  "requests": 58,
   "profile_verification": {
     "status": "visible_badges_observed",
     "url": "https://github.com/anistack72",
-    "checked_at": "2026-11-27T17:38:36.253862+00:00",
+    "checked_at": "2026-11-28T16:22:55.479466+00:00",
     "badges": [
       {
         "name": "Pull Shark",
@@ -1271,7 +1500,7 @@
               "selector": "img.achievement-badge-sidebar"
             },
             "authority": "Badge actually rendered on GitHub public profile; tier not inferred.",
-            "checked_at": "2026-11-27T17:38:36.253862+00:00"
+            "checked_at": "2026-11-28T16:22:55.479466+00:00"
           }
         },
         "blocked_transition": null

@@ -1,4 +1,4 @@
-# Growth intelligence — 2026-11-27
+# Growth intelligence — 2026-11-28
 
 Observed public data; no campaign or badge award attribution.
 
@@ -14,7 +14,7 @@ Observed public data; no campaign or badge award attribution.
 
 ## Useful next work
 
-Observed campaign interval: 2026-11-22 to 2026-11-27.
+Observed campaign interval: 2026-11-22 to 2026-11-28.
 Net follower change: 1. Genuine identity and causal attribution are unverified.
 
 - anistack72/mac-release-gate: Add only accurate technical topics from the implementation.
